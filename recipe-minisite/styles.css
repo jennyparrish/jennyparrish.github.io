@@ -1,0 +1,306 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+   /* background-color: #f8f8f8;
+    display: flex;
+    flex-direction: column;
+    align-items: center; */
+
+}
+
+/* perplexity.ai helped me with the hero section and the image overlay, and getting the flex display started */
+.hero {
+    position: relative;
+    height: 50vh;
+    min-height: 400px;          /* fallback for larger content */
+    display: flex;
+    align-items: flex-end;      /* align text to the bottom of the hero section */
+    justify-content: flex-start;     /* align text to the left */
+    padding: 0 2rem 0 0; /* add padding to the right for better text placement */
+    overflow: hidden;          /* hide any overflow from the image */
+}
+
+/* perplexity helped me with this */
+.hero::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-image: url("/favorite-recipe/curry.jpg");
+    background-size: cover;     /* ensure the image covers the entire hero section */
+    background-position: center; /* center the image */
+    opacity: 0.8;              /* adjust opacity for better text visibility */
+    z-index: -2;               /* place the image behind the text */
+}
+
+.hero::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.1); /* semi-transparent overlay for better text contrast */
+    z-index: -1;               /* place the overlay between the image and the text */
+}
+
+.hero-content {
+    position: relative;        /* ensure the text is above the image and overlay */
+    color: rgb(0, 0, 0);             /* text color for better visibility */
+    z-index: 1;
+    max-width: 610px;               /* ensure text is above the image and overlay */
+}
+
+.hero-content h1 {
+    font-family: 'Bonveno', 'Helvetica', 'Franklin Gothic Medium', Arial, sans-serif;
+    margin-bottom: 0.5rem;
+    padding: 10px 15px 10px 15px;
+    font-size: 2.5rem;
+    line-height: 1.2;
+    background-color: #8eb783b5;
+}
+
+.hero-content h3 {
+    font-family: 'Franklin Gothic Medium', 'Helvetica', Arial, sans-serif;
+    background-color: #f8f8f8b5;
+    padding: 10px 0 10px 15px;
+    font-size: .7em;
+}
+ 
+main {
+    padding: 4 rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#recipe-intro {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+/* I got help from perplexity.ai to create the star rating system */
+.ratings-stars {
+    color: #f8c146;         /* gold color for stars */
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+}
+
+#blurb {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    color:black;
+    max-width: 600px;
+    margin: 0 auto 1.5rem;
+}
+
+/* perplexity.ai helped me create a jump button */
+.jump-link {
+    display: inline-block;
+    background: #28a745;
+    color: white;
+    padding: 0.75rem 2rem;
+    border: none;
+    border-radius: 5px;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background 0.3s;
+}
+
+.jump-link:hover {
+    background: #218838;
+}
+
+#time-info {
+    background: #f8f9fa;
+    border-radius: 12px;
+    padding: 2rem;
+    margin-top: 2rem;
+}
+
+#time-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;     /* makes a 2x3 grid */
+    gap: 0;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+/* ai helped, but I used the tool in 'Inspect' to customize it */
+#time-list li {
+    background: #c6c6c6;
+    padding: .2rem;
+    border-radius: 3px;
+    text-align: left;
+}
+
+section {
+    padding: 4rem 2rem;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+#ingredients {
+    background: #fff8f0;
+    margin: 3rem 0;
+    padding: 3rem;
+}
+
+#ingredients h2 {
+    font-size: 2.5rem;
+    color: #d97706;
+    margin-bottom: 2rem;
+    text-align: left;
+}
+
+#ingredients ul {
+    list-style: none;
+    padding: 0;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#ingredients li {
+    background: white;
+    margin: 0.75rem 0;
+    padding: .25rem;
+    position: relative;
+    font-size: 1.1rem;
+    line-height: 1.3;
+}
+
+/* perplexity.ai gave me all of the framework for this */
+#video-placeholder {
+    text-align: center;
+    padding: 4rem 2rem;
+    background: gray;
+    color: white;
+    margin: 3rem 0;
+    position: relative;
+    overflow: hidden;
+}
+
+#video-placeholder::before {
+    content: ">";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    font-size: 6rem;
+    opacity: 0.3;
+}
+
+#video-placeholder {
+    width: 100%;
+    max-width: 800px;
+    height: 450px;
+    border: none;
+}
+
+#instructions {
+    background: #f0fdf4;
+    margin: 1rem 0;
+    padding: 1rem;
+}
+
+#instructions h2 {
+    font-size: 2.5rem;
+    color: #059669;
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+#instructions ol {
+    counter-reset: step-counter;
+    list-style: none;
+    padding: 0;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+#instructions li {
+    counter-increment: step-counter;
+    margin: 1rem 0;
+    padding: 1rem;
+    background: white;
+    position: relative;
+    font-size: 1.1rem;
+    line-height: 1.7;
+}
+
+
+/* desktop: image top-right, text left with slight overlap */
+@media (min-width: 992px) {
+    .hero {
+        height: 60vh; 
+        justify-content: flex-start; /* align items to the top */
+        padding: 4rem; /* increase padding for larger screens */
+        padding-bottom: 6rem; /* more space for text overlay */
+    }
+
+    .hero::before {
+        right: 0; /* align image to the right */
+        left: 50%; /* start image from the middle */
+        background-position: top right; /* position image to the top-right */
+    }
+
+    .hero-content {
+        align-self: flex-start;
+        position: relative;
+        padding-bottom: .5rem; /* add padding around text */
+    }
+
+    .hero-content h1 {
+        font-size: 2.5rem; /* increase font size for better readability */
+    }
+
+    .hero-content h3 {
+        font-size: 1rem; /* increase font size for better readability */
+    }
+
+    #time-list {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (max-width: 768px) {
+    #time-list {
+        grid-template-columns: 1fr 1fr;  
+        gap: 0;
+        max-width: 70%;
+        }
+
+    main {
+        padding: 1.5rem;
+    }
+
+    section {
+        padding: 1rem 1rem;
+    }
+
+    #ingredients, #instructions {
+        padding: 1rem;
+        margin: 1rem 0;
+    }
+
+    #ingredients h2, #instructions h2 {
+        font-size: 2rem;
+    }
+
+    #ingredients li span {
+        padding-left: 2rem;
+    }
+
+/* credit to perplexity.ai for showing me how to do this */
+    #video-placeholder iframe {
+        height: 250px;
+    }
+}
