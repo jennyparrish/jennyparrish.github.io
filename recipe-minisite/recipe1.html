@@ -1,0 +1,107 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Tiny Project 6: Responsive Recipe</title>
+
+	<!-- external and internal CSS -->
+	<link rel="stylesheet" href="styles.css" media="all">
+	<style>
+		/* in-file CSS here */
+	</style>
+
+	<!-- external and internal JavaScript -->
+	<script src="scripts.js" defer></script>
+	<script>
+		// in-page JavaScript here
+	</script>
+
+</head>
+<body>
+    <header class="hero">
+        <div class="hero-content">
+        <h3>MEAL TYPE: Main Course (Vegan)</h3>
+        <h1>Easy Chickpea Coconut Curry</h1>
+        </div>
+    </header>
+    <main>
+        <section id="recipe-intro">
+            <div class="ratings-stars">***** 4.8 (247)</div>
+            <p id="blurb">A delicious and savory meal made in under 45 minutes! Can easily be customized to suit individual tastes.
+            Try
+            substituting or adding more vegetables, like shredded carrots or thin-sliced red bell pepper! We love it
+            over basmati rice, but it's also great on potatoes and pasta!</p>
+            <a href="#recipe" class="jump-link">Jump to Recipe</a>
+        </section>
+
+        <div id="time-info">
+                <ul id="time-list">
+                    <li class="yield-calc">
+                        <label for="yield-input">Servings</label>
+                        <input type="number" id="yield-input" value="4" min="1" max="20">
+                        <div class="yield-output" id="yield-output">Adjust servings above</div>
+                    </li>
+                    <li id="item1">Prep Time<br><strong>10 minutes</strong></li>
+                    <li id="item2">Cook Time<br><strong>30 minutes</strong></li>
+                    <li id="item3">Total Time<br><strong>40 minutes</strong></li>
+                </ul>
+        </div>
+        
+        <section id="ingredients">
+            <h2>Ingredients</h2>
+            <ul>
+                <li><span>1 tablespoon coconut oil</span></li>
+                <li><span>1 large red onion, thinly sliced</span></li>
+                <li><span>3 cloves garlic, minced</span></li>
+                <li><span>1 tablespoon ginger, grated</span></li>
+                <li><span>1 tbsp garam masala</span></li>
+                <li><span>&frac14; tsp ground turmeric</span></li>
+                <li><span>&frac14; tsp ground black pepper</span></li>
+                <li><span>&frac14; tsp cayenne pepper (or to taste)</span></li>
+                <li><span>&frac14; tsp salt (plus more to taste)</span></li>
+                <li><span>1&half; cups diced tomatoes (equal to 1 14-oz. can, drained)</span></li>
+                <li><span>1&frac34; cups chickpeas, rinsed (equal to 1 16-oz. can, drained)</span></li>
+                <li><span>1&half; cups full-fat coconut milk (equal to 1 14-oz. can)</span></li>
+                <li><span>2 tbsp freshly-squeezed lime juice (or lemon)</span></li>
+                <li><span>Chopped fresh cilantro for garnish</span></li>
+            </ul>
+        </section>
+
+        <section id="video-placeholder">
+            <iframe src=""
+                    title="recipe video"
+                    allowfullscreen>
+                </iframe>
+        </section>
+
+        <section id="instructions">
+            <h2>Instructions</h2>
+            <ol>
+                <li>In a large pan, heat the coconut oil over medium-high heat. Add the red onion with a pinch of salt.
+                    Cook, stirring frequently, until the onion is softened and starting to brown.</li>
+                <li>Reduce the heat to medium. Add the garlic and ginger; stir and cook for 60 seconds or until
+                    fragrant. Stir in the garam masala, turmeric, black pepper, cayenne pepper, and salt. Cook for 30
+                    seconds more to toast the spices.</li>
+                <li>Add the tomatoes to the pan and stir well. Continue to cook, stirring occasionally, for about 3-5
+                    minutes or until the tomatoes are starting to break down and dry up a little bit. Stir in the
+                    coconut milk and chickpeas. Bring the mixture to a boil, then reduce the heat to medium-low.</li>
+                <li>Simmer the coconut chickpea curry for about 10 minutes or until reduced slightly. Stir in the fresh
+                    lime juice. Season to taste with additional salt (I used about another &frac12; teaspoon at this point).
+                    Serve hot, over rice or other accompaniments of choice, and garnished with chopped fresh cilantro.
+                </li>
+            </ol>
+        </section>
+    </main>
+
+    <!-- footer section -->
+    <footer>
+        <p>&copy; 2026 Jenny Parrish. Photo by <a
+                href="https://www.budgetbytes.com/coconut-curry-chickpeas">BudgetBytes</a></p>
+    </footer>
+
+</body>
+
+</html>
