@@ -1,16 +1,16 @@
-
 <!DOCTYPE html>
 <html>
-<head>
-	
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Tiny Project 7: Recipe Minisite - Home Page</title>
 
-	<!-- link rel="stylesheet" href="styles.css" media="all" -->
-	<style>
-		/* for responsive menu */
-        
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiny Project 7: Recipe Minisite - Home Page</title>
+
+    <!-- link rel="stylesheet" href="styles.css" media="all" -->
+    <style>
+        /* for responsive menu */
+
         /* variables */
         :root {
             --nav-height: 3rem;
@@ -38,67 +38,72 @@
             background-color: var(--nav-bkgd-color);
         }
 
-         #navBurger {
+        #navBurger {
             position: relaative;
             display: block;
             font-size: 2rem;
             color: var(--nav-text-color);
             padding: 0.1em 0 0 0.3em;
             max-height: 2rem;
-         }
+        }
 
-         nav ul {
+        nav ul {
             position: relative;
             background-color: var(--nav-hover-bkgd-color);
             list-style: none;
             margin: 0;
             padding: 0;
-         }
+        }
 
-         nav > ul {
+        nav>ul {
             max-height: 0;
             overflow: hidden;
             transition: max-height 0.5s;
-         }
+        }
 
-         nav.clicked > ul {
+        nav.clicked>ul {
             max-height: 90vh;
-         }
+        }
 
-         nav > ul > li {
+        nav>ul>li {
             position: relative;
             background-color: var(--nav-bkgd-color);
             display: block;
             margin: 1rem;
-         }
+        }
 
-         nav > ul > li > a {
+        nav>ul>li>a {
             display: block;
             width: 100%;
             height: 100%;
             padding: 0.5rem;
-         }
+        }
 
-         nav > ul > li > ul {
+        nav>ul>li>a::after {
+            position: absolute;
+            content: "¸";
+        }
+
+        nav>ul>li>ul {
             margin: 0 0 0 1rem;
             background-color: inherit;
             max-height: 0;
             overflow: hidden;
             transition: max-height 0.5s;
-         }
+        }
 
-         nav > ul > li.clicked > ul {
+        nav>ul>li.clicked>ul {
             max-height: 40vh;
-         }
+        }
 
-         nav > ul > li > ul > li {
+        nav>ul>li>ul>li {
             padding: 0.5rem 0 0.5rem 0.5rem;
-         }
+        }
 
-         nav a {
+        nav a {
             text-decoration: none;
             color: var(--nav-text-color);
-         }
+        }
 
         nav li:hover {
             background-color: var(--nav-hover-bkgd-color);
@@ -107,16 +112,16 @@
         nav li:hover a {
             color: var(--nav-hover-text-color);
         }
+    </style>
 
-	</style>
-
-	<!-- external and internal JavaScript -->
-	<script src="scripts.js" defer></script>
-	<script>
-		// in-page JavaScript here
-	</script>
+    <!-- external and internal JavaScript -->
+    <script src="scripts.js" defer></script>
+    <script>
+        // in-page JavaScript here
+    </script>
 
 </head>
+
 <body>
     <nav>
         <a id="navBurger">&#9776;</a>
@@ -148,5 +153,5 @@
 
     </main>
 </body>
-</html>
 
+</html>
