@@ -116,6 +116,23 @@
         nav li:hover a {
             color: var(--nav-hover-text-color);
         }
+
+        /* ----- Media Query for landscape / desktop layouts ----- */
+        @media screen and (orientation: landscape) {
+
+            #navBurger {
+                display: none;
+            }
+
+            nav > ul {
+                overflow: visible;
+            }
+
+            nav > ul > li {
+                float: left;
+            }
+        }
+        
     </style>
 
     <!-- external and internal JavaScript -->
