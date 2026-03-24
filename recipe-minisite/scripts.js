@@ -36,7 +36,13 @@ document.addEventListener("DOMContentLoaded", function() {
             }
         });
     }
+
+
+    // close nav is user clicks outside of nav
+    document.querySelector("html").addEventListener("click", function(e) {
+        if ( !e.target.closest("nav") && document.querySelector("nav").classList.contains("clicked") ) {
+            clickNav(true);
+        }
+    });
+
 });
-
-
-// document.querySelector("nav").classList.toggle("clicked");
