@@ -139,10 +139,21 @@
         
             nav > ul > li > ul {
                 margin: 0 0.5rem 0.5rem 0;
+                visibility: hidden;
+                position: absolute;
+            }
+
+            nav > ul > li.clicked > ul {
+                display: block;
+                visibility: visible;
             }
             
             nav > ul > li > ul li {
                 margin: 0;
+            }
+    
+            nav>ul>li>a::after {
+                content: "";
             }
         }
 
