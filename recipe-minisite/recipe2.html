@@ -10,7 +10,32 @@
 	<!-- external and internal CSS -->
 	<link rel="stylesheet" href="styles.css" media="all">
 	<style>
-		/* in-file CSS here */
+.hero {
+    position: relative;
+    height: 50vh;
+    min-height: 400px;
+    /* fallback for larger content */
+    display: flex;
+    align-items: flex-end;
+    /* align text to the bottom of the hero section */
+    justify-content: flex-start;
+    /* align text to the left */
+    padding: 0 2rem 0 0;
+    /* add padding to the right for better text placement */
+    overflow: hidden;
+    /* hide any overflow from the image */
+    background-image:
+        linear-gradient(to right, rgb(255, 255, 255, 0.3)0 100%),
+        url("/recipe-minisite/brocsoup.jpeg");
+    /* fixed based on Professor suggestions */
+    background-size: 50%;
+    /* ensure the image covers the entire hero section */
+    background-position: right;
+    /* set the image to the right */
+    background-repeat: no-repeat;
+    /* Don't repeat the image; show only one */
+    background-color: rgba(0, 0, 0, 0.1)
+}
 	</style>
 
 	<!-- external and internal JavaScript -->
@@ -31,7 +56,7 @@
         <section id="recipe-intro">
             <div class="ratings-stars">***** 4.9 (845)</div>
             <p id="blurb">This 30-minute broccoli cheddar soup recipe is the ULTIMATE comfort food! It's rich, creamy, super cheesy, and loaded with tender veggies.</p>
-            <a href="#recipe" class="jump-link">Jump to Recipe</a>
+            <a href="#instructions" class="jump-link">Jump to Recipe</a>
         </section>
 
         <div id="time-info">

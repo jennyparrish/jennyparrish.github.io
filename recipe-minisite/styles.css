@@ -1,8 +1,10 @@
 /* for responsive menu */
 
+/* I attempted to add the top nav bar to my recipe pages where I was going to have the HOME button as the top option and the other two recipes below it, but I wasn't able to get it done in time. */
+
 /* variables */
 :root {
-    --nav-height: 3rem;
+    --nav-height: 3rem;         
     --nav-bkgd-color: #8eb783b5;
     --nav-text-color: white;
     --nav-hover-bkgd-color: lightgray;
