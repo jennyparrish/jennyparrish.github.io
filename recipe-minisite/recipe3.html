@@ -1,53 +1,80 @@
-
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-	<title>Tiny Project 7: Recipe Minisite - Recipe 3</title>
 
-	<!-- external and internal CSS -->
-	<link rel="stylesheet" href="styles.css" media="all">
-	<style>
-		/* in-file CSS here */
-	</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tiny Project 7: Recipe Minisite - Recipe 3</title>
 
-	<!-- external and internal JavaScript -->
-	<script src="scripts.js" defer></script>
-	<script>
-		// in-page JavaScript here
-	</script>
+    <!-- external and internal CSS -->
+    <link rel="stylesheet" href="styles.css" media="all">
+    <style>
+        .hero {
+            position: relative;
+            height: 50vh;
+            min-height: 400px;
+            /* fallback for larger content */
+            display: flex;
+            align-items: flex-end;
+            /* align text to the bottom of the hero section */
+            justify-content: flex-start;
+            /* align text to the left */
+            padding: 0 2rem 0 0;
+            /* add padding to the right for better text placement */
+            overflow: hidden;
+            /* hide any overflow from the image */
+            background-image:
+                linear-gradient(to right, rgb(255, 255, 255, 0.3)0 100%),
+                url("/recipe-minisite/ccblondies.jpg");
+            /* fixed based on Professor suggestions */
+            background-size: 50%;
+            /* ensure the image covers the entire hero section */
+            background-position: right;
+            /* set the image to the right */
+            background-repeat: no-repeat;
+            /* Don't repeat the image; show only one */
+            background-color: rgba(0, 0, 0, 0.1)
+        }
+    </style>
+
+    <!-- external and internal JavaScript -->
+    <script src="scripts.js" defer></script>
+    <script>
+        // in-page JavaScript here
+    </script>
 
     /* Check https://www.onceuponachef.com/recipes/chocolate-chip-pecan-blondies.html#recipe for full recipe*/
 </head>
+
 <body>
     <header class="hero">
         <div class="hero-content">
-        <h3>MEAL TYPE: Dessert</h3>
-        <h1>Blondies</h1>
+            <h3>MEAL TYPE: Dessert</h3>
+            <h1>Blondies</h1>
         </div>
     </header>
     <main>
         <section id="recipe-intro">
             <div class="ratings-stars">***** 4.8 (314)</div>
-            <p id="blurb">This blondie recipe checks all the boxes: chewy, buttery, loaded with chocolate chips—and it all comes together in one bowl.</p>
-            <a href="#recipe" class="jump-link">Jump to Recipe</a>
+            <p id="blurb">This blondie recipe checks all the boxes: chewy, buttery, loaded with chocolate chips—and it
+                all comes together in one bowl.</p>
+            <a href="#instructions" class="jump-link">Jump to Recipe</a>
         </section>
 
         <div id="time-info">
-                <ul id="time-list">
-                    <li class="yield-calc">
-                        <label for="yield-input">Servings</label>
-                        <input type="number" id="yield-input" value="4" min="1" max="20">
-                        <div class="yield-output" id="yield-output">Adjust servings above</div>
-                    </li>
-                    <li id="item1">Prep Time<br><strong>15 minutes</strong></li>
-                    <li id="item2">Cook Time<br><strong>25 minutes</strong></li>
-                    <li id="item3">Total Time<br><strong>40 minutes</strong></li>
-                </ul>
+            <ul id="time-list">
+                <li class="yield-calc">
+                    <label for="yield-input">Servings</label>
+                    <input type="number" id="yield-input" value="4" min="1" max="20">
+                    <div class="yield-output" id="yield-output">Adjust servings above</div>
+                </li>
+                <li id="item1">Prep Time<br><strong>15 minutes</strong></li>
+                <li id="item2">Cook Time<br><strong>25 minutes</strong></li>
+                <li id="item3">Total Time<br><strong>40 minutes</strong></li>
+            </ul>
         </div>
-        
+
         <section id="ingredients">
             <h2>Ingredients</h2>
             <ul>
@@ -64,26 +91,32 @@
         </section>
 
         <section id="video-placeholder">
-            <iframe src=""
-                    title="recipe video"
-                    allowfullscreen>
-                </iframe>
+            <iframe src="" title="recipe video" allowfullscreen>
+            </iframe>
         </section>
 
         <section id="instructions">
             <h2>Instructions</h2>
             <ol>
-                <li>Preheat the oven to 350°F (175°C). Line an 8-inch (20-cm) square baking pan with an 8 x 11-inch (20 x 28-cm) piece of parchment paper, leaving a 2-inch (5-cm) overhang on two sides. You'll have to create seams in the corners and along the edges of the pan to get it to stay put (you can always add a few dots of butter underneath if necessary).</li>
-                <li>In a large bowl of an electric mixer, beat the melted butter with the brown sugar and granulated sugar until well combined, about 2 minutes. Beat in the egg and vanilla. On low speed, mix in the flour and salt until just blended. Stir in the chocolate chips and nuts. Transfer the batter to the prepared pan and spread evenly with a rubber spatula.</li>
-                <li>Bake for 25 to 30 minutes, until the top is set and lightly golden. Set the pan on a wire rack to cool. Using the parchment overhang, lift the blondie "cake" from the pan and transfer it to a cutting board; cut into 16 squares. Store the blondies in an airtight container at room temperature or freeze for longer storage.</li>
+                <li>Preheat the oven to 350°F (175°C). Line an 8-inch (20-cm) square baking pan with an 8 x 11-inch (20
+                    x 28-cm) piece of parchment paper, leaving a 2-inch (5-cm) overhang on two sides. You'll have to
+                    create seams in the corners and along the edges of the pan to get it to stay put (you can always add
+                    a few dots of butter underneath if necessary).</li>
+                <li>In a large bowl of an electric mixer, beat the melted butter with the brown sugar and granulated
+                    sugar until well combined, about 2 minutes. Beat in the egg and vanilla. On low speed, mix in the
+                    flour and salt until just blended. Stir in the chocolate chips and nuts. Transfer the batter to the
+                    prepared pan and spread evenly with a rubber spatula.</li>
+                <li>Bake for 25 to 30 minutes, until the top is set and lightly golden. Set the pan on a wire rack to
+                    cool. Using the parchment overhang, lift the blondie "cake" from the pan and transfer it to a
+                    cutting board; cut into 16 squares. Store the blondies in an airtight container at room temperature
+                    or freeze for longer storage.</li>
             </ol>
         </section>
     </main>
 
     <!-- footer section -->
     <footer>
-        <p>&copy; 2026 Jenny Parrish. Photo by <a
-                href="">BudgetBytes</a></p>
+        <p>&copy; 2026 Jenny Parrish. Photo by <a href="">BudgetBytes</a></p>
     </footer>
 
 </body>
