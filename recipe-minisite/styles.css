@@ -1,24 +1,9 @@
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-}
-
-body {
-    font-family: Arial, sans-serif;
-    /* background-color: #f8f8f8;
-    display: flex;
-    flex-direction: column;
-    align-items: center; */
-
-}
-
 /* for responsive menu */
 
 /* variables */
 :root {
     --nav-height: 3rem;
-    --nav-bkgd-color:#8eb783b5;
+    --nav-bkgd-color: #8eb783b5;
     --nav-text-color: white;
     --nav-hover-bkgd-color: lightgray;
     --nav-hover-text-color: black;
@@ -43,7 +28,7 @@ nav {
 }
 
 #navBurger {
-    position: relaative;
+    position: relative;
     display: block;
     font-size: 2rem;
     color: var(--nav-text-color);
@@ -188,20 +173,6 @@ h1 {
         linear-gradient(to right, rgb(255, 255, 255, 0.3)0 100%),
         url("/favorite-recipe/curry.jpg");
     /* fixed based on Professor suggestions */
-    background-size: 50%;
-    /* ensure the image covers the entire hero section */
-    background-position: right;
-    /* set the image to the right */
-    background-repeat: no-repeat;
-    /* Don't repeat the image; show only one */
-    background-color: rgba(0, 0, 0, 0.1)
-}
-
-/* perplexity helped me with this */
-.hero {
-    background-image:
-        linear-gradient(to right, rgb(255, 255, 255, 0.3)0 100%),
-        url("/favorite-recipe/curry.jpg");
     background-size: 50%;
     /* ensure the image covers the entire hero section */
     background-position: right;
@@ -401,82 +372,3 @@ section {
     line-height: 1.7;
 }
 
-
-/* desktop: image top-right, text left with slight overlap */
-@media (min-width: 992px) {
-    .hero {
-        height: 60vh;
-        justify-content: flex-start;
-        /* align items to the top */
-        padding: 4rem;
-        /* increase padding for larger screens */
-        padding-bottom: 6rem;
-        /* more space for text overlay */
-    }
-
-    .hero::before {
-        right: 0;
-        /* align image to the right */
-        left: 50%;
-        /* start image from the middle */
-        background-position: top right;
-        /* position image to the top-right */
-    }
-
-    .hero-content {
-        align-self: flex-start;
-        position: relative;
-        padding-bottom: .5rem;
-        /* add padding around text */
-    }
-
-    .hero-content h1 {
-        font-size: 2.5rem;
-        /* increase font size for better readability */
-    }
-
-    .hero-content h3 {
-        font-size: 1rem;
-        /* increase font size for better readability */
-    }
-
-    #time-list {
-        grid-template-columns: 1fr 1fr;
-    }
-}
-
-@media (max-width: 768px) {
-    #time-list {
-        grid-template-columns: 1fr 1fr;
-        gap: 0;
-        max-width: 70%;
-    }
-
-    main {
-        padding: 1.5rem;
-    }
-
-    section {
-        padding: 1rem 1rem;
-    }
-
-    #ingredients,
-    #instructions {
-        padding: 1rem;
-        margin: 1rem 0;
-    }
-
-    #ingredients h2,
-    #instructions h2 {
-        font-size: 2rem;
-    }
-
-    #ingredients li span {
-        padding-left: 2rem;
-    }
-
-    /* credit to perplexity.ai for showing me how to do this */
-    #video-placeholder iframe {
-        height: 250px;
-    }
-}
