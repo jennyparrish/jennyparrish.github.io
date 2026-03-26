@@ -26,18 +26,11 @@ body {
 }
 
 /* perplexity helped me with this */
-.hero::before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
+.hero {
     background-image: url("/favorite-recipe/curry.jpg");
-    background-size: cover;     /* ensure the image covers the entire hero section */
-    background-position: center; /* center the image */
-    opacity: 0.8;              /* adjust opacity for better text visibility */
-    z-index: -2;               /* place the image behind the text */
+    background-size: 50%;     /* ensure the image covers the entire hero section */
+    background-position: right; /* center the image */
+    background-repeat: no-repeat;
 }
 
 .hero::after {
