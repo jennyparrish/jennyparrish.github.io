@@ -55,7 +55,7 @@
             padding: 0;
         }
 
-        nav > ul {
+        nav>ul {
             max-height: 0;
             overflow: hidden;
             transition: max-height 0.5s;
@@ -124,41 +124,40 @@
                 display: none;
             }
 
-            nav > ul {
+            nav>ul {
                 overflow: visible;
             }
 
-            nav > ul > li {
+            nav>ul>li {
                 float: left;
                 margin: 0.5rem;
             }
 
-            nav > ul > li a {
+            nav>ul>li a {
                 padding-right: 0.5rem;
                 margin: 0;
             }
-        
-            nav > ul > li > ul {
+
+            nav>ul>li>ul {
                 margin: 0 0.5rem 0.5rem 0;
                 visibility: hidden;
                 position: absolute;
             }
 
-            nav > ul > li.clicked > ul {
+            nav>ul>li.clicked>ul {
                 display: block;
                 visibility: visible;
             }
-            
-            nav > ul > li > ul li {
+
+            nav>ul>li>ul li {
                 margin: 0;
                 white-space: nowrap;
             }
-    
+
             nav>ul>li>a::after {
                 content: "";
             }
         }
-
     </style>
 
     <!-- external and internal JavaScript -->
@@ -176,13 +175,13 @@
         <ul>
             <li><a href="#">Recipes</a>
                 <ul>
-                    <li><a href="/recipe1.html">Chickpea Coconut Curry (Vegan)</a></li>
-                    <li><a href="/recipe2.html">Broccoli and Cheese Soup (Vegetarian)</a></li>
-                    <li><a href="/recipe3.html">Blondies</a></li>
+                    <li><a href="/recipe-minisite/recipe1.html">Chickpea Coconut Curry (Vegan)</a></li>
+                    <li><a href="/recipe-minisite/recipe2.html">Broccoli and Cheese Soup (Vegetarian)</a></li>
+                    <li><a href="/recipe-minisite/recipe3.html">Blondies</a></li>
                 </ul>
             </li>
 
-        <!--    <li><a href="#">Meals</a>
+            <!--    <li><a href="#">Meals</a>
                 <ul>
                     <li><a href="#">Entrees</a></li>
                     <li><a href="#">Soups</a></li>
@@ -195,8 +194,13 @@
 
     </nav>
     <main>
-        <h1>Some title here.</h1>
-        <p>More content here.</p>
+        <h1>Jenny's Favorite Recipes</h1>
+        <p>Check out some of my favorite recipes:</p>
+        <ul>
+            <li><a href="/recipe-minisite/recipe1.html">Chickpea Coconut Curry (Vegan)</a></li>
+            <li><a href="/recipe-minisite/recipe2.html">Broccoli and Cheese Soup (Vegetarian)</a></li>
+            <li><a href="/recipe-minisite/recipe3.html">Blondies</a></li>
+        </ul>
 
     </main>
 </body>
