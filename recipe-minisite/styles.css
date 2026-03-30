@@ -334,12 +334,11 @@ section {
     counter-reset: step-counter;
     list-style: counter;
     padding: 0;
-    max-width: 900px;
     margin: 0 auto;
 }
 
 #instructions li {
-    counter-increment: step-counter;
+ /*   counter-increment: step-counter; */
     margin: 1rem 0;
     padding: 1rem;
     background: white;
