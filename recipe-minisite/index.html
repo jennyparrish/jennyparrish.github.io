@@ -127,7 +127,8 @@
             line-height: 1.5;
         }
 
-        main p, ul {
+        main p,
+        ul {
             padding-left: 2em;
         }
 
@@ -138,13 +139,29 @@
         }
 
         .herbs-wrap {
-            position; fixed;
-            right: 0;                   /* so it stays in the same place even when scrolling */ 
-            bottom: 0;                  /* so it stays in the same place even when scrolling */
-            width: min(90vw, 200px);    /* so it doesn't take up too much space on smaller screens, but also doesn't get too small on larger screens */ 
-            opacity: 0.7;               /* so it doesn't overpower the content on the page, but is still visible and adds some visual interest to the page */ 
-            pointer-events: none;       /* so it doesn't interfere with clicking on the nav menu */ 
-            z-index: 0;                 /* so it doesn't interfere with clicking on the nav menu */ 
+            position;
+            fixed;
+            right: 0;
+            /* so it stays in the same place even when scrolling */
+            bottom: 0;
+            /* so it stays in the same place even when scrolling */
+            width: min(90vw, 800px);
+            /* so it doesn't take up too much space on smaller screens, but also doesn't get too small on larger screens */
+            opacity: 0.7;
+            /* so it doesn't overpower the content on the page, but is still visible and adds some visual interest to the page */
+            pointer-events: none;
+            /* so it doesn't interfere with clicking on the nav menu */
+            z-index: 0;
+            /* so it doesn't interfere with clicking on the nav menu */
+        }
+
+        .herbs-wrap img {
+            display: block;
+            /* so it doesn't have any extra space below it, which can happen with inline images */
+            width: 100%;
+            /* so it fills the width of the container, which is set to a max of 200px, but can be smaller on smaller screens */
+            height: auto;
+            /* so it maintains its aspect ratio and doesn't get distorted when the width changes */
         }
 
         /* ----- Media Query for landscape / desktop layouts ----- */
@@ -187,6 +204,11 @@
             nav>ul>li>a::after {
                 content: "";
             }
+
+            .herbs-wrap {
+                max-width: 800px;               /* so it doesn't get too big on larger screens, but can still be smaller on smaller screens */ 
+                opacity: 0.95;
+            }
         }
     </style>
 
@@ -224,9 +246,10 @@
                 <ul>
                     <li><a href="https://yupitsvegan.com/easy-coconut-chickpea-curry/">Yup, It's Vegan</a></li>
                     <li><a href="https://www.loveandlemons.com/broccoli-cheddar-soup/">Love & Lemons</a></li>
-                    <li><a href="https://www.onceuponachef.com/recipes/chocolate-chip-pecan-blondies.html">Once Upon A Chef</a></li>
+                    <li><a href="https://www.onceuponachef.com/recipes/chocolate-chip-pecan-blondies.html">Once Upon A
+                            Chef</a></li>
                 </ul>
-            </li> 
+            </li>
         </ul>
 
     </nav>
@@ -239,7 +262,8 @@
             <li><a href="/recipe-minisite/recipe3.html">Chocolate Chip Blondies</a></li>
         </ul>
         <div class="herbs-wrap">
-            <img src="/recipe-minisite/herbsboard.jpeg" alt="Herbs with butcher knife and cutting board" style="width: 100%; max-width: 400px; height: auto;">
+            <img src="/recipe-minisite/herbsboard.jpeg" alt="Herbs with butcher knife and cutting board"
+                style="width: 100%; max-width: 400px; height: auto;">
         </div>
     </main>
 </body>
