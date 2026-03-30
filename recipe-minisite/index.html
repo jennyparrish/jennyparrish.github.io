@@ -136,8 +136,7 @@
             font-size: 4em;
             font-family: 'Gorditas', cursive;
             padding-left: 20px;
-            background-color: white;
-
+            background-color: gradient(to right, #8eb783b5, #8eb783b5 50%, transparent 50%);
         }
 
         .herbs-wrap {
@@ -152,8 +151,8 @@
             /* so it doesn't overpower the content on the page, but is still visible and adds some visual interest to the page */
             pointer-events: none;
             /* so it doesn't interfere with clicking on the nav menu */
-            z-index: 0;
-            /* so it doesn't interfere with clicking on the nav menu */
+            z-index: -1;
+            /* so it doesn't interfere with clicking on the nav menu and stays behind the title text */
         }
 
         .herbs-wrap img {
@@ -207,8 +206,10 @@
             }
 
             .herbs-wrap {
-                width: 65vw;            /* so it takes up more space on larger screens, but still leaves room for the content on the page to be the main focus */  
-                opacity: 0.70;          /* so it doesn't overpower the content on the page, but is still visible and adds some visual interest to the page */
+                width: 65vw;
+                /* so it takes up more space on larger screens, but still leaves room for the content on the page to be the main focus */
+                opacity: 0.70;
+                /* so it doesn't overpower the content on the page, but is still visible and adds some visual interest to the page */
             }
         }
     </style>
@@ -228,12 +229,12 @@
         <ul>
             <li><a href="#">Recipes</a>
                 <ul>
-                        <li><a href="/recipe-minisite/recipe1.html">Chickpea Coconut Curry (Vegan)</a></li>
-                        <li><a href="/recipe-minisite/recipe2.html">Broccoli and Cheese Soup (Vegetarian)</a></li>
-                        <li><a href="/recipe-minisite/recipe3.html">Blondies</a></li>
+                    <li><a href="/recipe-minisite/recipe1.html">Chickpea Coconut Curry (Vegan)</a></li>
+                    <li><a href="/recipe-minisite/recipe2.html">Broccoli and Cheese Soup (Vegetarian)</a></li>
+                    <li><a href="/recipe-minisite/recipe3.html">Blondies</a></li>
                 </ul>
             </li>
-        </ul> 
+        </ul>
         <ul>
             <li><a href="#">Origin Sites</a>
                 <ul>
