@@ -283,8 +283,8 @@ main {
 
 section {
     padding: 4rem 2rem;
-    max-width: 1200px;
-    margin: 0 auto;
+    max-width: 1000px;
+    margin: 10px auto;
 }
 
 #ingredients {
@@ -316,33 +316,6 @@ section {
     line-height: 1.3;
 }
 
-/* perplexity.ai gave me all of the framework for this */
-#video-placeholder {
-    text-align: center;
-    padding: 4rem 2rem;
-    background: gray;
-    color: white;
-    margin: 3rem 0;
-    position: relative;
-    overflow: hidden;
-}
-
-#video-placeholder::before {
-    content: ">";
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    font-size: 6rem;
-    opacity: 0.3;
-}
-
-#video-placeholder {
-    width: 100%;
-    max-width: 800px;
-    height: 450px;
-    border: none;
-}
-
 #instructions {
     background: #f0fdf4;
     margin: 1rem 0;
@@ -358,9 +331,9 @@ section {
 
 #instructions ol {
     counter-reset: step-counter;
-    list-style: none;
+    list-style: counter;
     padding: 0;
-    max-width: 700px;
+    max-width: 900px;
     margin: 0 auto;
 }
 
