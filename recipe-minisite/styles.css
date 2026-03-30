@@ -4,7 +4,7 @@
 
 /* variables */
 :root {
-    --nav-height: 3rem;         
+    --nav-height: 3rem;
     --nav-bkgd-color: #8eb783b5;
     --nav-text-color: white;
     --nav-hover-bkgd-color: lightgray;
@@ -289,13 +289,14 @@ section {
 
 #ingredients {
     background: #fff8f0;
-    margin: 0 1rem 1rem 1rem;              /* I added margin to the left and right of the ingredients section to give it more space on mobile devices, and I added margin to the bottom to give it more space from the instructions section */
+    margin: 0 1rem 1rem 1rem;
+    /* I added margin to the left and right of the ingredients section to give it more space on mobile devices, and I added margin to the bottom to give it more space from the instructions section */
 }
 
 #ingredients h2 {
     font-size: 2.5rem;
     color: #d97706;
-    margin-bottom: 2rem;
+    margin: .5rem 4rem;
     text-align: left;
 }
 
@@ -317,8 +318,10 @@ section {
 
 #instructions {
     background: #f0fdf4;
-    margin: 0 1rem;                         /* I added margin to the left and right of the instructions section to give it more space on mobile devices, and I removed the margin from the top and bottom to give it more space from the ingredients section and the time info section */ 
-    padding: .5rem 2rem 2rem 2rem;          /* I added the padding to the top of the instructions section to give it more space from the ingredients section, and I added padding to the left and right to give it more space on mobile devices */ 
+    margin: 0 1rem;
+    /* I added margin to the left and right of the instructions section to give it more space on mobile devices, and I removed the margin from the top and bottom to give it more space from the ingredients section and the time info section */
+    padding: .5rem 2rem 2rem 2rem;
+    /* I added the padding to the top of the instructions section to give it more space from the ingredients section, and I added padding to the left and right to give it more space on mobile devices */
 }
 
 #instructions h2 {
@@ -346,3 +349,22 @@ section {
     line-height: 1.7;
 }
 
+footer {
+    text-align: center;
+    max-width: 60rem;
+    margin: 20px auto;
+    font-size: 0.9em;
+    color: #666;
+    padding: 10px 0;
+    border-top: 1px solid #ddd;
+}
+
+@media screen {
+    orientation: landscape;
+
+    section {
+        position: relative;
+        /* I added this to the section element to allow the pseudo-elements to be positioned relative to the section, which allows me to create a more dynamic and visually appealing layout for larger screens. */
+    }
+
+}
