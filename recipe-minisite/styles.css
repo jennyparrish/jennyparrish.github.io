@@ -282,9 +282,9 @@ main {
 }
 
 section {
-    padding: 4rem 2rem;
-    max-width: 1000px;
-    margin: 10px auto;
+    line-height: 1.8;
+    padding: 0 1rem 1rem 1rem;
+    max-width: 1200px;
 }
 
 #ingredients {
