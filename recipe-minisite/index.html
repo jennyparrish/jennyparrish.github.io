@@ -137,6 +137,16 @@
             padding-left: 20px;
         }
 
+        .herbs-wrap {
+            position; fixed;
+            right: 0;                   /* so it stays in the same place even when scrolling */ 
+            bottom: 0;                  /* so it stays in the same place even when scrolling */
+            width: min(90vw, 200px);    /* so it doesn't take up too much space on smaller screens, but also doesn't get too small on larger screens */ 
+            opacity: 0.7;               /* so it doesn't overpower the content on the page, but is still visible and adds some visual interest to the page */ 
+            pointer-events: none;       /* so it doesn't interfere with clicking on the nav menu */ 
+            z-index: 0;                 /* so it doesn't interfere with clicking on the nav menu */ 
+        }
+
         /* ----- Media Query for landscape / desktop layouts ----- */
         @media screen and (orientation: landscape) {
 
@@ -228,7 +238,7 @@
             <li><a href="/recipe-minisite/recipe2.html">Broccoli and Cheese Soup (Vegetarian)</a></li>
             <li><a href="/recipe-minisite/recipe3.html">Chocolate Chip Blondies</a></li>
         </ul>
-        <div style="display: flex; justify-content: center; margin-top: 2em;">
+        <div class="herbs-wrap">
             <img src="/recipe-minisite/herbsboard.jpeg" alt="Herbs with butcher knife and cutting board" style="width: 100%; max-width: 400px; height: auto;">
         </div>
     </main>
