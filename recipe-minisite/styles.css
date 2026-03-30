@@ -163,7 +163,7 @@ h1 {
     min-height: 400px;
     /* fallback for larger content */
     display: flex;
-    align-items: flex-end;      
+    align-items: flex-end;
     /* align text to the bottom of the hero section */
     justify-content: flex-start;
     /* align text to the left */
@@ -194,25 +194,24 @@ h1 {
     /* ensure text is above the image and overlay */
 }
 
+.hero-content h3 {
+    font-family: 'Franklin Gothic Medium', 'Helvetica', Arial, sans-serif;
+    background-color: #f8f8f8b5;
+    padding: 1rem;
+    font-size: .8em;
+}
+
 .hero-content h1 {
     font-family: 'Bonveno', 'Helvetica', 'Franklin Gothic Medium', Arial, sans-serif;
     margin-bottom: 0.5rem;
-    padding: 10px 15px 10px 15px;
+    padding: 1rem;
     font-size: 2.5rem;
     line-height: 1.2;
     background-color: #8eb783b5;
 }
 
-.hero-content h3 {
-    font-family: 'Franklin Gothic Medium', 'Helvetica', Arial, sans-serif;
-    background-color: #f8f8f8b5;
-    padding: 10px 0 10px 15px;
-    font-size: .7em;
-}
-
 main {
     padding: 4 rem 2rem;
-    max-width: 1200px;
     margin: 0 auto;
 }
 
