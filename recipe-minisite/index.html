@@ -139,13 +139,12 @@
         }
 
         .herbs-wrap {
-            position;
-            fixed;
+            position: fixed;
             right: 0;
             /* so it stays in the same place even when scrolling */
             bottom: 0;
             /* so it stays in the same place even when scrolling */
-            width: min(90vw, 800px);
+            width: min(90vw, 400px);
             /* so it doesn't take up too much space on smaller screens, but also doesn't get too small on larger screens */
             opacity: 0.7;
             /* so it doesn't overpower the content on the page, but is still visible and adds some visual interest to the page */
@@ -206,8 +205,8 @@
             }
 
             .herbs-wrap {
-                max-width: 800px;               /* so it doesn't get too big on larger screens, but can still be smaller on smaller screens */ 
-                opacity: 0.95;
+                width: 75vw;            /* so it takes up more space on larger screens, but still leaves room for the content on the page to be the main focus */  
+                opacity: 0.70;          /* so it doesn't overpower the content on the page, but is still visible and adds some visual interest to the page */
             }
         }
     </style>
@@ -262,8 +261,7 @@
             <li><a href="/recipe-minisite/recipe3.html">Chocolate Chip Blondies</a></li>
         </ul>
         <div class="herbs-wrap">
-            <img src="/recipe-minisite/herbsboard.jpeg" alt="Herbs with butcher knife and cutting board"
-                style="width: 100%; max-width: 400px; height: auto;">
+            <img src="/recipe-minisite/herbsboard.jpeg" alt="Herbs with butcher knife and cutting board">
         </div>
     </main>
 </body>
