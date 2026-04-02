@@ -36,10 +36,17 @@ body {
 }
 
 #flowerbkgd.darkMode {
+    background-image: url("/rhododendron/rhodo1.jpg");
+    background-size: cover;
+    /* Scale the background image to cover the entire area of the element */
+    background-position: center center;
+    /* Center the background image within the element */
+    background-attachment: fixed;
+    /* Keep the background image fixed in place when scrolling */
     filter: grayscale(100%);
 }
 
-p.darkMode {
+section.darkMode {
     background-color: #180012;
     color: white;
 }

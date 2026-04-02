@@ -6,15 +6,16 @@ document.addEventListener("DOMContentLoaded", function() {
         document.body.classList.toggle("darkMode");
     });
 
-    let oneItem = document.querySelector("#firstObject");
-    let twoItem = document.querySelector("#secondObject");
-
-    oneItem.addEventListener("mouseover", function (e) {
-        twoItem.classList.add("gotClicked");  // add class
     });
+//    let oneItem = document.querySelector("#firstObject");
+//    let twoItem = document.querySelector("#secondObject");
 
-    oneItem.addEventListener("mouseout", function (e) {
-        twoItem.classList.remove("gotMoused");  // remove class
-    });
+//    oneItem.addEventListener("mouseover", function (e) {
+//        twoItem.classList.add("gotClicked");  // add class
+//    });
 
-});
+//    oneItem.addEventListener("mouseout", function (e) {
+//        twoItem.classList.remove("gotMoused");  // remove class
+//    });
+
+//});
