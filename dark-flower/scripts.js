@@ -6,8 +6,8 @@ document.addEventListener("DOMContentLoaded", () => {
     const body = document.body;              // path to the original image for light mode
 
     // paths for normal and dark background images
-    const normalBg = "/rhododendron/rhodo1.jpg";
-    const darkBg = "/rhododendron/rhodo1-dark.jpeg";
+    const normalBg = "/dark-flower/rhodo1.jpeg";
+    const darkBg = "/dark-flower/rhodo1-dark.jpeg";
 
     // initialize button text based on body's class
     const updateButtonLabel = () => {
