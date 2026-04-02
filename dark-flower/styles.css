@@ -116,26 +116,13 @@ body.darkMode header {
 }
 
 body.darkMode h1#banner {
-    font-family: "Playfair Display", "Didot", "Bodoni MT", "Times New Roman", serif;
-    font-size: 5rem;
     color: rgba(255, 86, 238, .8);
     background: rgb(32, 32, 32);
-    padding: .5em;
-    text-align: center;
-    margin: 20px;
-    border-radius: 5px;
-    /* rounded corners for better aesthetics */
 }
 
 body.darkMode h2 {
-    padding: .5em;
-    text-align: center;
-    font-size: 1.8em;
     color: rgba(255, 86, 238, .8);
     background: rgb(32, 32, 32);
-    /* semi-transparent background for better readability */
-    border-radius: 5px;
-    margin: 20px;
 }
 
 section.darkMode,
@@ -152,11 +139,6 @@ body.darkMode section {
 body.darkMode p {
     color: rgba(255, 86, 238, .8);
     background: rgb(32, 32, 32);
-    border-radius: 5px;
-    margin: 10px 0;
-    line-height: 1.4;
-    text-justify: left;
-    padding: 10px;
 }
 
 #last-img {
