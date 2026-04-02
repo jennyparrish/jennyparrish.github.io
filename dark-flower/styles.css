@@ -41,6 +41,25 @@ body.darkMode {
     color: white;
 }
 
+header.darkMode {
+    background-color: rgb(245, 245, 245, 0.7);
+}
+
+h1#banner.darkMode {
+    color: rgba(255, 86, 238, .8);
+}
+
+header h2.darkMode {
+    padding: .5em;
+    text-align: center;
+    font-size: 1.8em;
+    color: rgba(255, 86, 238, .8);
+    background: rgb(32, 32, 32);
+    /* semi-transparent background for better readability */
+    border-radius: 5px;
+    margin: 20px;
+}
+
 section.darkMode,
 section {
     transition: background-color 200ms ease, color 200ms ease;
