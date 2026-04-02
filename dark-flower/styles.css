@@ -27,6 +27,7 @@ header {
     /* semi-transparent background for better readability */
     padding: 10px;
     margin: 0 0 6rem 0;
+    /* add bottom margin to create space between header and main content */
 }
 
 h1#banner {
@@ -47,6 +48,7 @@ header h2 {
     padding: .5em;
     text-align: center;
     font-size: 1.8em;
+    /* Larger font size for better readability */
     color: #2d0021;
     background: rgb(245, 245, 245, 0.7);
     /* semi-transparent background for better readability */
@@ -62,6 +64,7 @@ main {
     justify-content: space-between;
     /* space items evenly with space between them */
     gap: 10px;
+    /* add gap between items for better spacing */
     padding: 20px;
 }
 
@@ -93,6 +96,7 @@ p {
 
 figcaption {
     text-justify: auto;
+    /* Justify the caption text for better readability */
     font-size: 0.9em;
     color: #180012;
     background-color: rgba(245, 245, 245, 0.7);
@@ -102,12 +106,26 @@ figcaption {
     width: 100%;
 }
 
+#last-img {
+    width: 76vw;
+    /* Set the image width to 50% of the viewport width for better responsiveness */
+    max-width: fit-content;
+    /* Ensure the image does not exceed its natural size */
+    margin: 10px;
+    border: 8px solid rgba(245, 245, 245, 0.7);
+    /* Add a solid border with the same color as the text for better aesthetics */
+    border-radius: 5px;
+}
+
 #toggleDarkMode {
     position: relative;
     /* Position the button relative to its normal position */
     bottom: 20px;
+    /* Move the button up by 20px to overlap the header */
     left: 10px;
+    /* Move the button to the right by 10px */
     max-width: 180px;
+    /* Limit the maximum width of the button */
     z-index: 1000;
     /* Ensure the button is above other content */
     padding: 10px;
@@ -122,11 +140,14 @@ figcaption {
 
 body.darkMode {
     background-color: #51003c;
+    /* darker background for better contrast */
     color: white;
+    /* light text for better readability */
 }
 
 body.darkMode header {
     background-color: rgba(255, 225, 248, 0.7);
+    /* lighter background for better contrast */
 }
 
 body.darkMode h1#banner {
@@ -135,14 +156,18 @@ body.darkMode h1#banner {
 }
 
 body.darkMode h2 {
+    /* header h2 */
     color: rgba(255, 86, 238, .8);
+    /* light pink text for better contrast */
     background: rgb(32, 32, 32);
+    /* dark background for better contrast */
 }
 
+/*
 section.darkMode,
 section {
     transition: background-color 200ms ease, color 200ms ease;
-}
+} */
 
 /* when darkMode is enabled, make sections darker and text light */
 body.darkMode section {
@@ -160,11 +185,14 @@ body.darkMode figcaption {
     background: rgb(32, 32, 32);
 }
 
-#last-img {
-    width: 50vw;
+body.darkMode #last-img {
+    width: 76vw;
+    /* Set the image width to 50% of the viewport width for better responsiveness */
     max-width: fit-content;
+    /* Ensure the image does not exceed its natural size */
     margin: 10px;
     border: 8px solid #180012;
+    /* Add a solid border with the same color as the text for better aesthetics */
     border-radius: 5px;
 }
 
