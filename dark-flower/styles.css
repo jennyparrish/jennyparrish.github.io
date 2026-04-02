@@ -102,11 +102,11 @@ body.darkMode {
     color: white;
 }
 
-header.darkMode {
+body.darkMode header {
     background-color: #f5f5f5b3;
 }
 
-h1#banner.darkMode {
+body.darkMode h1#banner {
     font-family: "Playfair Display", "Didot", "Bodoni MT", "Times New Roman", serif;
     font-size: 5rem;
     color: rgba(255, 86, 238, .8);
@@ -118,7 +118,7 @@ h1#banner.darkMode {
     /* rounded corners for better aesthetics */
 }
 
-header h2.darkMode {
+body.darkMode h2 {
     padding: .5em;
     text-align: center;
     font-size: 1.8em;
