@@ -148,7 +148,8 @@ footer {
     }
 }
 
-@media (min-width: 1025px) {
+/* Responsive: large screens / landscape */
+@media (min-width: 900px) and (orientation: landscape) {
     main {
         display: flex;
         flex-wrap: wrap;
@@ -173,11 +174,8 @@ footer {
         margin: 0 auto;
     }
 
-    .sec-left {
-        align-content: end;
-    }
-
-    #last-img {
-        max-width: 75vw;
+    #lastImg {
+        width: 60vw;
+        float: left;
     }
 }
