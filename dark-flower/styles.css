@@ -1,5 +1,6 @@
 * {
-    box-sizing: border-box;         /* Include padding and border in the element's total width and height */
+    box-sizing: border-box;
+    /* Include padding and border in the element's total width and height */
     margin: 0;
     padding: 0;
 }
@@ -30,10 +31,12 @@ header {
 
 h1#banner {
     font-family: "Playfair Display", "Didot", "Bodoni MT", "Times New Roman", serif;
-    font-size: 5rem;        /* Large, elegant font for the banner */
+    font-size: 5rem;
+    /* Large, elegant font for the banner */
     color: #180012;
     padding: .5em;
-    text-align: center;     /* Center the banner text */
+    text-align: center;
+    /* Center the banner text */
     background-color: rgba(245, 245, 245, 0.7);
     margin: 20px;
     border-radius: 5px;
@@ -86,6 +89,18 @@ p {
     line-height: 1.4;
     text-justify: left;
     padding: 10px;
+}
+
+figcaption {
+    text-justify: auto;
+    font-size: 0.9em;
+    color: #180012;
+    background-color: rgba(245, 245, 245, 0.7);
+    border-radius: 5px;
+    padding: 5px;
+    margin: 20px 5px;
+    width: 55%;
+    float: right;
 }
 
 #toggleDarkMode {
@@ -141,22 +156,17 @@ body.darkMode p {
     background: rgb(32, 32, 32);
 }
 
+body.darkMode figcaption {
+    color: rgba(255, 86, 238, .8);
+    background: rgb(32, 32, 32);
+}
+
 #last-img {
     width: 50vw;
     max-width: fit-content;
     margin: 10px;
-    border: 2px solid #180012;
+    border: 8px solid #180012;
     border-radius: 5px;
-}
-
-figcaption {
-    text-justify: auto;
-    font-size: 0.9em;
-    color: #180012;
-    background-color: rgba(245, 245, 245, 0.7);
-    border-radius: 5px;
-    padding: 5px;
-    margin-top: 5px;
 }
 
 footer {
@@ -213,6 +223,17 @@ footer {
     section {
         max-width: 60vw;
         margin: 0 auto;
+    }
+
+    figcaption {
+        text-justify: auto;
+        font-size: 0.9em;
+        color: #180012;
+        background-color: rgba(245, 245, 245, 0.7);
+        border-radius: 5px;
+        padding: 5px;
+        margin: 10px 0 15px;
+        width: 100%;
     }
 
     #lastImg {
