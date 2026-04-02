@@ -13,11 +13,9 @@ body {
 
 #flowerbkgd {
     background-image: url("/rhododendron/rhodo1.jpg");
-    background-size: cover;
-    background-position: center center;
-    background-attachment: fixed;
-
-    /* background-color: #ffcaf1; */
+    background-size: cover;                     /* Scale the background image to cover the entire area of the element */ 
+    background-position: center center;         /* Center the background image within the element */
+    background-attachment: fixed;               /* Keep the background image fixed in place when scrolling */
 }
 
 header {
@@ -61,6 +59,7 @@ main>* {
 }
 
 section {
+    
     font-size: 1.2em;
     color: #180012;
     background: rgba(255, 86, 238, 0.30);
