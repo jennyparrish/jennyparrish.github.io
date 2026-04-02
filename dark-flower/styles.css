@@ -36,17 +36,19 @@ body {
     cursor: pointer;            /* Change cursor to pointer on hover */
 }
 
+body.darkMode {
+    background-color: #180012;
+    color: white;
+}
+
 #flowerbkgd.darkMode {
-    background-image: url("/rhododendron/rhodo1.jpg");
-    opacity: 0.5;
-    background-color: black;
+    background-image: url("/rhododendron/rhodo1-dark.jpeg");
     background-size: cover;
     /* Scale the background image to cover the entire area of the element */
     background-position: center center;
     /* Center the background image within the element */
     background-attachment: fixed;
     /* Keep the background image fixed in place when scrolling */
-    filter: grayscale(100%);
 }
 
 section.darkMode {
