@@ -12,7 +12,6 @@ body {
 }
 
 #flowerbkgd {
-    background-image: url("/rhododendron/rhodo1.jpg");
     background-size: cover;
     /* Scale the background image to cover the entire area of the element */
     background-position: center center;
