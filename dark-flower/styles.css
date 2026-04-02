@@ -22,7 +22,8 @@ body {
 }
 
 #toggleDarkMode {
-    position: relative;         /* Position the button relative to its normal position */
+    position: relative;
+    /* Position the button relative to its normal position */
     bottom: 20px;
     left: 10px;
     max-width: 180px;
@@ -31,9 +32,11 @@ body {
     padding: 10px;
     background-color: rgba(255, 86, 238, 0.8);
     color: #180012;
-    border: rgb(155, 29, 145);    /* Solid border with the same color as the background */
+    border: rgb(155, 29, 145);
+    /* Solid border with the same color as the background */
     border-radius: 5px;
-    cursor: pointer;            /* Change cursor to pointer on hover */
+    cursor: pointer;
+    /* Change cursor to pointer on hover */
 }
 
 body.darkMode {
@@ -45,8 +48,16 @@ header.darkMode {
     background-color: rgb(245, 245, 245, 0.7);
 }
 
-h1#banner.darkMode {
+h1#banner {
+    font-family: "Playfair Display", "Didot", "Bodoni MT", "Times New Roman", serif;
+    font-size: 5rem;
     color: rgba(255, 86, 238, .8);
+    background: rgb(32, 32, 32);
+    padding: .5em;
+    text-align: center;
+    margin: 20px;
+    border-radius: 5px;
+    /* rounded corners for better aesthetics */
 }
 
 header h2.darkMode {
