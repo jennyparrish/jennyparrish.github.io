@@ -23,11 +23,11 @@ body {
 
 #toggleDarkMode {
     position: relative;         /* Position the button relative to its normal position */
-    top: 10px;
+    top: 5px;
     right: 10px;
     z-index: 1000;
     /* Ensure the button is above other content */
-    padding: 10px 20px;
+    padding: 10px;
     background-color: rgba(255, 86, 238, 0.8);
     color: #180012;
     border: rgba(255, 50, 238, 1.0);    /* Solid border with the same color as the background */
