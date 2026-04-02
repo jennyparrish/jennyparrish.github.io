@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // paths for normal and dark background images
     const normalBg = "/dark-flower/rhodo1.jpg";
-    const darkBg = "/dark-flower/rhodo1-dark.jpeg";
+    const darkBg = "/dark-flower/rhodo1-dk.jpeg";
 
     // initialize button text based on body's class
     const updateButtonLabel = () => {
