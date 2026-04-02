@@ -19,6 +19,7 @@ body {
     /* Center the background image within the element */
     background-attachment: fixed;
     /* Keep the background image fixed in place when scrolling */
+    transition: background-image 300ms ease-in-out;
 }
 
 #toggleDarkMode {
@@ -41,9 +42,16 @@ body.darkMode {
     color: white;
 }
 
-section.darkMode {
-    background-color: #180012;
-    color: white;
+section.darkMode,
+section {
+    transition: background-color 200ms ease, color 200ms ease;
+}
+
+/* when darkMode is enabled, make sections darker and text light */
+body.darkMode section {
+    background-color: rgba(24, 0, 18, 0.70);
+    /* semi-transparent background for better readability */
+    color: #fff;
 }
 
 header {
