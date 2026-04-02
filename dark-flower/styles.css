@@ -221,7 +221,7 @@ footer {
     }
 
     #last-img {
-        max-width: 330px;
+        max-width: 350px;
     }
 }
 
@@ -281,6 +281,6 @@ footer {
     }
 
     body.darkMode #last-img {
-        max-width: 330px;
+        max-width: 350px;
     }
 }
