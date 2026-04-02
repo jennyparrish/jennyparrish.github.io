@@ -1,31 +1,38 @@
 // wait for the DOM to load completely
-document.addEventListener("DOMContentLoaded", function() {
+document.addEventListener("DOMContentLoaded", () => {
 
-    const darkModeButton = document.querySelector("#toggleDarkMode");   // select the button that will toggle dark mode
-    const darkModeImage = "/rhododendron/rhodo1-dark.jpeg";         // path to the alternate image for dark mode
-    const lightModeImage = "/rhododendron/rhodo1.jpg";              // path to the original image for light mode
+    const btn = document.getElementById("toggleDarkMode");    // select the button that will toggle dark mode
+    const root = document.getElementById("flowerbkgd");        // path to the alternate image for dark mode
+    const body = document.body;              // path to the original image for light mode
 
-    darkModeButton.addEventListener("click", function(e){           // select the image element that will change
+    // paths for normal and dark background images
+    const normalBg = "/rhododendron/rhodo1.jpg";
+    const darkBg = "/rhododendron/rhodo1-dark.jpeg";
+
+    // initialize button text based on body's class
+    const updateButtonLabel = () => {
+        if (body.classList.contains("darkMode")) {
+            btn.innerHTML = 'Turn <strong>"Dark Mode"</strong> OFF';
+        } else {
+            btn.innerHTML = 'Turn <strong>"Dark Mode"</strong> ON';
+        }
+    };
+
+    btn.addEventListener("click", () => {           // select the image element that will change
         // toggle dark mode class on body
-        document.body.classList.toggle("darkMode");
-        // alternate image
-        flowerImage.style.backgroundImage = `url(${})`;
-
-        // update button text to reflect state
-        const isDark = document.body.classList.contains("darkMode");
-        darkModeButton.innerHTML = `Turn <strong>"Dark Mode"</strong> ${isDark ? 'OFF' : 'ON'}`;
+        body.classList.toggle("darkMode");
+        // change container background image
+        if (body.classList.contains("darkMode")) {
+            root.style.backgroundImage = `url(${darkBg})`;
+        } else {
+            root.style.backgroundImage = `url(${normalBg})`;
+        }
+        updateButtonLabel();
     });
 
-    });
-//    let oneItem = document.querySelector("#firstObject");
-//    let twoItem = document.querySelector("#secondObject");
-
-//    oneItem.addEventListener("mouseover", function (e) {
-//        twoItem.classList.add("gotClicked");  // add class
-//    });
-
-//    oneItem.addEventListener("mouseout", function (e) {
-//        twoItem.classList.remove("gotMoused");  // remove class
-//    });
-
-//});
+    // ensure initial state uses correct image
+    if (!root.style.backgroundImage) {
+        root.style.backgroundImage = `url(${normalBg})`;
+    }
+    updateButtonLabel();
+});
