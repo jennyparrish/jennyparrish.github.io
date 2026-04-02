@@ -3,7 +3,7 @@ document.addEventListener("DOMContentLoaded", function() {
 
     let darkModeButton = document.querySelector("#toggleDarkMode");
     darkModeButton.addEventListener("click", function(e) {
-        document.div.classList.toggle("darkMode");
+        document.body.classList.toggle("darkMode");
     });
 
     });
