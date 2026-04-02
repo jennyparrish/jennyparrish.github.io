@@ -98,9 +98,8 @@ figcaption {
     background-color: rgba(245, 245, 245, 0.7);
     border-radius: 5px;
     padding: 5px;
-    margin: 20px 5px;
-    width: 55%;
-    float: right;
+    margin: 10px 0 15px;
+    width: 100%;
 }
 
 #toggleDarkMode {
@@ -225,6 +224,7 @@ footer {
         margin: 0 auto;
     }
 
+
     figcaption {
         text-justify: auto;
         font-size: 0.9em;
@@ -232,8 +232,9 @@ footer {
         background-color: rgba(245, 245, 245, 0.7);
         border-radius: 5px;
         padding: 5px;
-        margin: 10px 0 15px;
-        width: 100%;
+        margin: 20px 5px;
+        width: 55%;
+        float: right;
     }
 
     #lastImg {
