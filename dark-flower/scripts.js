@@ -1,16 +1,15 @@
 // wait for the DOM to load completely
 document.addEventListener("DOMContentLoaded", function() {
 
-    const darkModeButton = document.querySelector("#toggleDarkMode");
-    const flowerImage = document.querySelector("#flowerbkgd");
+    const darkModeButton = document.querySelector("#toggleDarkMode");   // select the button that will toggle dark mode
+    const darkModeImage = "/rhododendron/rhodo1-dark.jpeg";         // path to the alternate image for dark mode
+    const lightModeImage = "/rhododendron/rhodo1.jpg";              // path to the original image for light mode
 
-    // alternate image on click
-    const darkModeImage = '/rhododendron/rhodo1-dark.jpeg';
-
-    darkModeButton.addEventListener("click", function(e){
+    darkModeButton.addEventListener("click", function(e){           // select the image element that will change
         // toggle dark mode class on body
         document.body.classList.toggle("darkMode");
-        // Swap to a single alternate image
+        // alternate image
+        flowerImage.style.backgroundImage = `url(${})`;
 
         // update button text to reflect state
         const isDark = document.body.classList.contains("darkMode");
