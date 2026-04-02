@@ -1,0 +1,161 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 16px;
+    font-family: "Arial", sans-serif;
+    background-color: #003703;
+    padding: 0 .5em .5em .5em;
+}
+
+#flowerbkgd {
+    background-image: url("/rhododendron/rhodo1.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+
+    /* background-color: #ffcaf1; */
+}
+
+header {
+    background: rgba(255, 86, 238, 0.50);
+    padding: 10px;
+    margin: 0 0 6rem 0;
+}
+
+h1#banner {
+    font-family: "Playfair Display", "Didot", "Bodoni MT", "Times New Roman", serif;
+    font-size: 5rem;
+    color: #180012;
+    padding: .5em;
+    text-align: center;
+    background-color: rgba(245, 245, 245, 0.7);
+    margin: 20px;
+    border-radius: 5px;
+}
+
+header h2 {
+    padding: .5em;
+    text-align: center;
+    font-size: 1.8em;
+    color: #2d0021;
+    background: rgb(245, 245, 245, 0.7);
+    /* semi-transparent background for better readability */
+    border-radius: 5px;
+    margin: 20px;
+}
+
+main {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 20px;
+}
+
+main>* {
+    flex: 1 1 100%;
+}
+
+section {
+    font-size: 1.2em;
+    color: #180012;
+    background: rgba(255, 86, 238, 0.30);
+    /* semi-transparent background for better readability */
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+}
+
+/* section.sec-right {
+    margin-left: auto;
+    margin-right: 0;
+} */
+
+p {
+    background: rgba(245, 245, 245, 0.7);
+    border-radius: 5px;
+    margin: 10px 0;
+    line-height: 1.4;
+    text-justify: left;
+    padding: 10px;
+}
+
+#last-img {
+    width: 50vw;
+    max-width: fit-content;
+    margin: 10px;
+    border: 2px solid #180012;
+    border-radius: 5px;
+}
+
+figcaption {
+    text-justify: auto;
+    font-size: 0.9em;
+    color: #180012;
+    background-color: rgba(245, 245, 245, 0.7);
+    border-radius: 5px;
+    padding: 5px;
+    margin-top: 5px;
+}
+
+footer { 
+    /* height: 30px;*/
+    text-align: center;
+}
+
+
+@media (min-width: 300px) {
+    main>* {
+        flex: 1 1 (100vw - 3px);
+    }
+
+    h1#banner {
+        font-size: 3em;
+        margin: 15px;
+    }
+
+    header h2 {
+        font-size: 1.2em;
+    }
+
+    section {
+        width: 100vw;
+        margin: 5px 0;
+    }
+
+    #last-img {
+        max-width: 330px;
+    }
+}
+
+@media (min-width: 1025px) {
+    main {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        gap: 10px;
+        padding: 20px;
+    }
+
+    h1#banner {
+        font-size: 4em;
+        margin: 10px;
+    }
+
+    header h2 {
+        font-size: 1.8em;
+    }
+
+    section {
+        max-width: 50vw;
+        margin: 0 auto;
+    }
+
+    #last-img {
+        max-width: 75vw;
+    }
+}
