@@ -1,3 +1,5 @@
+/* DuckDuckGo.ai and VSCode assisted the author (me, Jenny) in the building of this javascript */
+
 // wait for the DOM to load completely
 document.addEventListener("DOMContentLoaded", () => {
 
