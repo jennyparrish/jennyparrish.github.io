@@ -38,6 +38,8 @@ body {
 
 #flowerbkgd.darkMode {
     background-image: url("/rhododendron/rhodo1.jpg");
+    opacity: 0.5;
+    background-color: black;
     background-size: cover;
     /* Scale the background image to cover the entire area of the element */
     background-position: center center;
