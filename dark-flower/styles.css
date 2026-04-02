@@ -11,15 +11,8 @@ body {
     padding: 0 .5em .5em .5em;
 }
 
-#flowerbkgd {
-    background-image: url("/rhododendron/rhodo1.jpg");
-    background-size: cover;                     /* Scale the background image to cover the entire area of the element */ 
-    background-position: center center;         /* Center the background image within the element */
-    background-attachment: fixed;               /* Keep the background image fixed in place when scrolling */
-}
-
 #toggleDarkMode {
-    position: fixed;
+    position: relative;                      // 
     top: 10px;
     right: 10px;
     z-index: 1000;                             /* Ensure the button is above other content */
@@ -29,6 +22,13 @@ body {
     border: none;
     border-radius: 5px;
     cursor: pointer;
+}
+
+#flowerbkgd {
+    background-image: url("/rhododendron/rhodo1.jpg");
+    background-size: cover;                     /* Scale the background image to cover the entire area of the element */ 
+    background-position: center center;         /* Center the background image within the element */
+    background-attachment: fixed;               /* Keep the background image fixed in place when scrolling */
 }
 
 #flowerbkgd.darkMode {
