@@ -21,6 +21,64 @@ body {
     transition: background-image 300ms ease-in-out;
 }
 
+header {
+    background: rgba(255, 86, 238, 0.50);
+    /* semi-transparent background for better readability */
+    padding: 10px;
+    margin: 0 0 6rem 0;
+}
+
+h1#banner {
+    font-family: "Playfair Display", "Didot", "Bodoni MT", "Times New Roman", serif;
+    font-size: 5rem;
+    color: #180012;
+    padding: .5em;
+    text-align: center;
+    background-color: rgba(245, 245, 245, 0.7);
+    margin: 20px;
+    border-radius: 5px;
+    /* rounded corners for better aesthetics */
+}
+
+header h2 {
+    padding: .5em;
+    text-align: center;
+    font-size: 1.8em;
+    color: #2d0021;
+    background: rgb(245, 245, 245, 0.7);
+    /* semi-transparent background for better readability */
+    border-radius: 5px;
+    margin: 20px;
+}
+
+main {
+    display: flex;
+    /* use flexbox for layout */
+    flex-wrap: wrap;
+    /* allow items to wrap to the next line on smaller screens */
+    justify-content: space-between;
+    /* space items evenly with space between them */
+    gap: 10px;
+    padding: 20px;
+}
+
+main>* {
+    flex: 1 1 100%;
+    /* allow items to grow and shrink as needed, with a base width of 100% */
+    flex-direction: column;
+    /* stack items vertically within each section */
+}
+
+section {
+    font-size: 1.2em;
+    color: #180012;
+    background: rgba(255, 86, 238, 0.30);
+    /* semi-transparent background for better readability */
+    border-radius: 5px;
+    padding: 10px;
+    margin: 10px;
+}
+
 #toggleDarkMode {
     position: relative;
     /* Position the button relative to its normal position */
@@ -45,10 +103,10 @@ body.darkMode {
 }
 
 header.darkMode {
-    background-color: rgb(245, 245, 245, 0.7);
+    background-color: #f5f5f5b3;
 }
 
-h1#banner {
+h1#banner.darkMode {
     font-family: "Playfair Display", "Didot", "Bodoni MT", "Times New Roman", serif;
     font-size: 5rem;
     color: rgba(255, 86, 238, .8);
