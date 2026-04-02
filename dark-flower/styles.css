@@ -228,13 +228,16 @@ footer {
 /* Responsive: large screens / landscape */
 @media (min-width: 900px) and (orientation: landscape) {
     main {
-        display: flex;                  /
-        flex-wrap: wrap;                    /* Allow items to wrap to the next line on smaller screens */
-        justify-content: flex-start;        /* Align items to the start of the container for a more traditional layout on larger screens */
+        display: flex;/ flex-wrap: wrap;
+        /* Allow items to wrap to the next line on smaller screens */
+        justify-content: flex-start;
+        /* Align items to the start of the container for a more traditional layout on larger screens */
         gap: 10px;
-        padding: 20px;  
-        flex-direction: column;             /* Stack sections vertically on larger screens for better readability */
-        align-content: space-between;       /* Align items to the start of the container and allow them to wrap to the next line */
+        padding: 20px;
+        flex-direction: column;
+        /* Stack sections vertically on larger screens for better readability */
+        align-content: space-between;
+        /* Align items to the start of the container and allow them to wrap to the next line */
     }
 
     h1#banner {
@@ -247,13 +250,17 @@ footer {
     }
 
     section {
-        max-width: 60vw;            /* Limit the maximum width of sections for better readability on larger screens */
-        margin: 0 auto;       /* Center sections horizontally */    
+        max-width: 60vw;
+        /* Limit the maximum width of sections for better readability on larger screens */
+        margin: 0 auto;
+        /* Center sections horizontally */
     }
 
     figcaption {
-        text-justify: auto;         /* Justify the caption text for better readability */
-        font-size: 0.7em;           /* smaller font size for better aesthetics on larger screens */
+        text-justify: auto;
+        /* Justify the caption text for better readability */
+        font-size: 0.7em;
+        /* smaller font size for better aesthetics on larger screens */
         color: #180012;
         background-color: rgba(245, 245, 245, 0.7);
         border-radius: 5px;

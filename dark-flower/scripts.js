@@ -6,28 +6,28 @@ document.addEventListener("DOMContentLoaded", () => {
     const body = document.body;              // path to the original image for light mode
 
     // paths for normal and dark background images
-    const normalBg = "/dark-flower/rhodo1.jpg";
-    const darkBg = "/dark-flower/rhodo1-dk.jpeg";
+    const normalBg = "/dark-flower/rhodo1.jpg";     // path to the normal image for light mode
+    const darkBg = "/dark-flower/rhodo1-dk.jpeg";   // path to the alternate image for dark mode
 
     // initialize button text based on body's class
-    const updateButtonLabel = () => {
-        if (body.classList.contains("darkMode")) {
-            btn.innerHTML = 'Turn <strong>"Dark Mode"</strong> OFF';
+    const updateButtonLabel = () => {       // function to update the button label based on the current mode
+        if (body.classList.contains("darkMode")) {      // if dark mode is active, set the button label to indicate it can be turned off
+            btn.innerHTML = 'Turn <strong>"Dark Mode"</strong> OFF';        // if dark mode is not active, set the button label to indicate it can be turned on
         } else {
-            btn.innerHTML = 'Turn <strong>"Dark Mode"</strong> ON';
+            btn.innerHTML = 'Turn <strong>"Dark Mode"</strong> ON';     // if dark mode is active, set the button label to indicate it can be turned off
         }
     };
 
     btn.addEventListener("click", () => {           // select the image element that will change
-        // toggle dark mode class on body
-        body.classList.toggle("darkMode");
-        // change container background image
-        if (body.classList.contains("darkMode")) {
-            root.style.backgroundImage = `url(${darkBg})`;
-        } else {
-            root.style.backgroundImage = `url(${normalBg})`;
+
+        body.classList.toggle("darkMode");          // toggle the dark mode class on the body element to switch between modes
+
+        if (body.classList.contains("darkMode")) {      // if dark mode is active, set the background to the dark image
+            root.style.backgroundImage = `url(${darkBg})`;  // change the background image to the dark version
+        } else {                // if dark mode is not active, set the background to the normal image
+            root.style.backgroundImage = `url(${normalBg})`;        // change the background image back to the normal version
         }
-        updateButtonLabel();
+        updateButtonLabel();        // update the button label to reflect the current mode
     });
 
     // ensure initial state uses correct image
