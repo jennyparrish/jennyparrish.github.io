@@ -23,14 +23,15 @@ body {
 
 #toggleDarkMode {
     position: relative;         /* Position the button relative to its normal position */
-    top: 5px;
-    right: 10px;
+    bottom: 20px;
+    left: 10px;
+    max-width: 180px;
     z-index: 1000;
     /* Ensure the button is above other content */
     padding: 10px;
     background-color: rgba(255, 86, 238, 0.8);
     color: #180012;
-    border: rgba(255, 50, 238, 1.0);    /* Solid border with the same color as the background */
+    border: rgb(155, 29, 145);    /* Solid border with the same color as the background */
     border-radius: 5px;
     cursor: pointer;            /* Change cursor to pointer on hover */
 }
