@@ -13,6 +13,7 @@ header {
   width: 100%;
   box-sizing: border-box;
   position: relative;
+  padding: 15px;
 }
 
 .site-nav {
@@ -110,5 +111,9 @@ header {
   
   .nav-toggle-btn.open .nav-toggle-icon {
     transform: rotate(90deg);
+  }
+
+  @media (max-width: 1375px) {
+    
   }
 }
