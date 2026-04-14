@@ -6,17 +6,19 @@
     <title>Home</title>
 
     <link rel="stylesheet" href="styles.css">
+  <script src="file.js"></script>
+  
 </head>
 <body>
 
     <header>
         <nav class="site-nav">
-            <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-hidden="true">   <!-- Hidden checkbox to control the nav toggle -->
-            <label for="nav-toggle" class="nav-toggle-btn" aria-label:="Toggle navigation"> <!-- Label for the checkbox to act as the toggle button -->
-                <span class="nav-toggle-icon"></span> <!-- Icon for the toggle button (e.g., hamburger icon) -->
-            </label>
+            <button class="nav-toggle-btn" aria-controls="site-nav-list" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="nav-toggle-icon" aria-hidden="true"></span>
+              <span class="nav-toggle-title">Nav List</span>
+          </button>
             <!-- For single-link navs / extra context, added aria-current="page" on the active link -->
-            <ul class="site-nav-list">  <!-- Navigation links -->
+            <ul id="site-nav-list" class="site-nav-list" hidden>  <!-- Navigation links -->
                 <li><a href="/">Home</a></li>
                 <li><a href="/guidelines.html">Guidelines</a></li>
                 <li><a href="/tos.html">Terms of Service</a></li>
@@ -43,7 +45,5 @@
     <footer>
 
     </footer>
-
 </body>
-
 </html>
