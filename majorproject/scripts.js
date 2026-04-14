@@ -1,19 +1,18 @@
-
 (function() {
   const btn = document.querySelector('.nav-toggle-btn');
   const list = document.getElementById('site-nav-list');
-  if (!btn || !list) return;
+  if (btn && list) {
   
   btn.addEventListener('click', () => {
     const expanded = btn.getAttribute('aria-expanded') === 'true';
     btn.setAttribute('aria-expanded', String(!expanded));
     btn.classList.toggle('open', !expanded);
-    if (expanded) {
-      list.setAttribute('hidden', '');
-    } else {
-      list.removeAttribute('hidden');
-    }
+    list.classList.toggle('open', !expanded);
+    
+    if (expanded) list.setAttribute('aria-hidden', 'true');
+    else list.removeAttribute('area-hidden');
   });
+  }
   
   btn.addEventListener('keydown', (e) => {
     if (e.key === 'Escape') {
