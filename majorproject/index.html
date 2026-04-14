@@ -10,7 +10,11 @@
 <body>
 
     <header>
-        <nav>
+        <nav class="site-nav">
+            <input type="checkbox" id="nav-toggle" class="nav-toggle" aria-hidden="true">   <!-- Hidden checkbox to control the nav toggle -->
+            <label for="nav-toggle" class="nav-toggle-btn" aria-label:="Toggle navigation"> <!-- Label for the checkbox to act as the toggle button -->
+                <span class="nav-toggle-icon"></span> <!-- Icon for the toggle button (e.g., hamburger icon) -->
+            </label>
             <!-- For single-link navs / extra context, added aria-current="page" on the active link -->
             <ul>
                 <li><a href="/">Home</a></li>
