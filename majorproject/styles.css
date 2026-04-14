@@ -12,11 +12,14 @@ body {
 header {
   width: 100%;
   box-sizing: border-box;
+  position: relative;
 }
 
 .site-nav {
   width: 100%;
   box-sizing: border-box;
+  position: relative;
+  z-index: 30;
 }
 
 .site-nav-list {
@@ -68,15 +71,41 @@ header {
 .nav-toggle-title { font-weight: 600; font-size: 0.95rem; }
 
 @media (max-width: 990px) {
-  .nav-toggle-btn { display: inline-flex; }
-  .site-nav-list {
-   display: block;
-    width: 100%;
-    padding: 0;
+  .nav-toggle-btn { 
+    display: inline-flex;
   }
   
+  .nav-toggle-btn { 
+    position: relative;
+    z-index: 40; 
+  }
+  
+  .site-nav-list {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
+    background:  rgba(98, 204, 239, 0.689);
+    box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+    display: none;
+    margin: 0;
+    padding: 0.5rem 0;
+  }
+  
+  
   .site-nav-list[hidden] { display: none; }
-  .site-nav-list > li { flex: none; text-align: left; }
+  .site-nav-list.open {display: block; }
+  .site-nav-list {
+    transform-origin: top;
+    transition: transform 180ms ease, opacity 160ms ease;
+    transform: scaleY(1);
+    opacity: 1;
+  }
+  
+  .site-nav-list > li { 
+    padding: 0; 
+    text-align: left; }
+  
   .site-nav-list a { display: block; padding: 0.6rem 1rem; }
   
   .nav-toggle-btn.open .nav-toggle-icon {
