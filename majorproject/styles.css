@@ -37,17 +37,22 @@ header {
   right: 0;
   background: rgba(98, 204, 239, 0.689);
   box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
-  list-style: none;
   margin: 0;
   padding: 0.5rem 0;
+  list-style: none;
 
   /* animation-friendly closed state */
-  transform-origin: top;                        /* Set the origin for scaling to the top edge, so it collapses upwards */
-  transform: scaleY(0);                   /* Scale down to 0 height to hide the nav list */ 
-  opacity: 0;                 /* Make it invisible when closed */
-  pointer-events: none;     /* Prevent interaction when closed */
+  transform-origin: top;
+  /* Set the origin for scaling to the top edge, so it collapses upwards */
+  transform: scaleY(0);
+  /* Scale down to 0 height to hide the nav list */
+  opacity: 0;
+  /* Make it invisible when closed */
+  pointer-events: none;
+  /* Prevent interaction when closed */
 
-  transition: transform 180ms ease, opacity 160ms ease;     /* Smooth transition for opening/closing the nav list */
+  transition: transform 180ms ease, opacity 160ms ease;
+  /* Smooth transition for opening/closing the nav list */
 }
 
 .site-nav-list[hidden] {
@@ -56,15 +61,21 @@ header {
 
 /* Open state (mobile): make visible and interactive */
 .site-nav-list.open {
-  transform: scaleY(1);                   /* Scale back to full height to show the nav list */
-  opacity: 1;                 /* Make it fully visible */
-  pointer-events: auto;      /* Allow interaction when open */
+  transform: scaleY(1);
+  /* Scale back to full height to show the nav list */
+  opacity: 1;
+  /* Make it fully visible */
+  pointer-events: auto;
+  /* Allow interaction when open */
 }
 
 .site-nav-list {
-  transform-origin: top;        /* Set the origin for scaling to the top edge, so it collapses upwards */
-  transition: transform 180ms ease, opacity 160ms ease;   /* Smooth transition for opening/closing the nav list */
-  transform: scaleY(1);     /* Ensure the nav list is fully visible by default (for desktop) */
+  transform-origin: top;
+  /* Set the origin for scaling to the top edge, so it collapses upwards */
+  transition: transform 180ms ease, opacity 160ms ease;
+  /* Smooth transition for opening/closing the nav list */
+  transform: scaleY(1);
+  /* Ensure the nav list is fully visible by default (for desktop) */
   opacity: 1;
 }
 
@@ -88,35 +99,51 @@ header {
 @media (min-width: 800px) {
 
   .nav-toggle-btn {
-    display: none;        /* Hide the toggle button on desktop, as the nav will be displayed as a horizontal bar */
+    display: none;
+    /* Hide the toggle button on desktop, as the nav will be displayed as a horizontal bar */
   }
 
   .site-nav-list {
-    position: static;       /* Remove absolute positioning for desktop, allowing it to flow naturally in the layout */
-    top: auto;              /* Reset top position for desktop, as it will be displayed in the normal document flow */
-    left: auto;           /* Reset left position for desktop */ 
-    right: auto;          /* Reset right position for desktop */
-    background: transparent; /* Remove background for desktop, as it will be displayed as a horizontal bar */
-    box-shadow: none;     /* Remove box shadow for desktop, as it will be displayed as a horizontal bar */
+    position: static;
+    /* Remove absolute positioning for desktop, allowing it to flow naturally in the layout */
+    top: auto;
+    /* Reset top position for desktop, as it will be displayed in the normal document flow */
+    left: auto;
+    /* Reset left position for desktop */
+    right: auto;
+    /* Reset right position for desktop */
+    background: transparent;
+    /* Remove background for desktop, as it will be displayed as a horizontal bar */
+    box-shadow: none;
+    /* Remove box shadow for desktop, as it will be displayed as a horizontal bar */
     margin: 0;
     padding: 0;
-    transform: none;       /* Remove transform for desktop, as it will be displayed as a horizontal bar */
-    opacity: 1;            /* Ensure it's fully visible on desktop */
-    pointer-events: auto; /* Ensure it's interactive on desktop */
-    display: flex;        /* Use flexbox to layout the nav items horizontally on desktop */
-    justify-content: space-between; /* Distribute nav items evenly across the horizontal bar on desktop */
-    align-items: center;   /* Center nav items vertically within the horizontal bar on desktop */
-    width: 100%;          /* Ensure the nav bar takes the full width of the container on desktop */
+    transform: none;
+    /* Remove transform for desktop, as it will be displayed as a horizontal bar */
+    opacity: 1;
+    /* Ensure it's fully visible on desktop */
+    pointer-events: auto;
+    /* Ensure it's interactive on desktop */
+    display: flex;
+    /* Use flexbox to layout the nav items horizontally on desktop */
+    justify-content: space-between;
+    /* Distribute nav items evenly across the horizontal bar on desktop */
+    align-items: center;
+    /* Center nav items vertically within the horizontal bar on desktop */
+    width: 100%;
+    /* Ensure the nav bar takes the full width of the container on desktop */
   }
 
   .site-nav-list>li {
-    flex: 1 1 auto; /* Allow nav items to grow and shrink as needed, and take up equal space on desktop */
+    flex: 1 1 auto;
+    /* Allow nav items to grow and shrink as needed, and take up equal space on desktop */
     text-align: center;
     /* Center text within each item */
   }
 
-  .site-nav-list[hidden] { 
-    display: block; /* Ensure the nav list is still displayed on desktop, even if it has the hidden attribute, as the toggle button is hidden and the nav should always be visible on desktop */
+  .site-nav-list[hidden] {
+    display: block;
+    /* Ensure the nav list is still displayed on desktop, even if it has the hidden attribute, as the toggle button is hidden and the nav should always be visible on desktop */
   }
 
 }
