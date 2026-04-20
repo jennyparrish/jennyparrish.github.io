@@ -1,3 +1,5 @@
+/* Stylesheet for Major Project (Neighbors Helping Neighbors - Jenny Parrish) */
+
 * {
     box-sizing: border-box;
 }
@@ -50,10 +52,8 @@ header {
 .nav-toggle-btn {
   display: none;
   align-items: center;
-  gap: 0.5rem;
   background: transparent;
   border: none;
-  padding: 0.5rem;
   cursor: pointer;
   font: inherit;
 }
