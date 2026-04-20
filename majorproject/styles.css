@@ -1,14 +1,14 @@
 /* Stylesheet for Major Project (Neighbors Helping Neighbors - Jenny Parrish) */
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    background: #d0d0d0;
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #d0d0d0;
 }
 
 header {
@@ -20,62 +20,82 @@ header {
   position: relative;
   z-index: 30;
 }
-  
-  .nav-toggle-btn { 
-    display: inline-flex;
-    position: relative;
-    z-index: 40; 
-  }
 
-  .site-nav-list {
-    position: absolute;
-    top: 100%;
-    left: 0;
-    right: 0;
-    background:  rgba(98, 204, 239, 0.689);
-    box-shadow: 0 6px 18px rgba(0,0,0,0.12);
-    display: none;
-    margin: 0;
-    padding: 0.5rem 0;
-  }
+/* Toggle button for nav links */
+.nav-toggle-btn {
+  display: inline-flex;
+  align-items: center;
+  position: relative;
+  z-index: 40;
+}
 
-  .site-nav-list[hidden] { display: none; }
-  .site-nav-list.open {display: block; }
-  .site-nav-list {
-    transform-origin: top;
-    transition: transform 180ms ease, opacity 160ms ease;
-    transform: scaleY(1);
-    opacity: 1;
-  }
-  
-  .site-nav-list > li { 
-    padding: 0; 
-    text-align: left; }
-  
-  .site-nav-list a { display: block; padding: 0.6rem 1rem; }
-  
-  .nav-toggle-btn.open .nav-toggle-icon {
-    transform: rotate(90deg);
-  }
+.site-nav-list {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background: rgba(98, 204, 239, 0.689);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12);
+  display: none;
+  margin: 0;
+  padding: 0.5rem 0;
+}
+
+.site-nav-list[hidden] {
+  display: none;
+}
+
+.site-nav-list.open {
+  display: block;
+}
+
+.site-nav-list {
+  transform-origin: top;
+  transition: transform 180ms ease, opacity 160ms ease;
+  transform: scaleY(1);
+  opacity: 1;
+}
+
+.site-nav-list>li {
+  padding: 0;
+  text-align: left;
+}
+
+.site-nav-list a {
+  display: block;
+  padding: 0.6rem 1rem;
+}
+
+.nav-toggle-btn.open .nav-toggle-icon {
+  transform: rotate(90deg);
+}
 
 @media (min-width: 800px) {
 
-.site-nav-list.open {display: block; }
-  
-.site-nav-list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  display: flex;                    /* Use flexbox to layout the navigation items in a single row, allowing them to wrap if necessary */
-  justify-content: space-between;   /* Distribute items evenly with space between them */
-  align-items: center;              /* Vertically center items within the navigation bar */ 
-  width: 100%;
-  box-sizing: border-box;           /* Ensure the navigation list takes up the full width of its container */
-}
+  .site-nav-list.open {
+    display: block;
+  }
 
-.site-nav-list > li {
-  flex: 1 1 1;              /* Allow items to grow and shrink equally, with a base width of 100% */
-  text-align: center;       /* Center text within each item */
-}
+  .site-nav-list {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex;
+    /* Use flexbox to layout the navigation items in a single row, allowing them to wrap if necessary */
+    justify-content: space-between;
+    /* Distribute items evenly with space between them */
+    align-items: center;
+    /* Vertically center items within the navigation bar */
+    width: 100%;
+    box-sizing: border-box;
+    /* Ensure the navigation list takes up the full width of its container */
+  }
+
+  .site-nav-list>li {
+    flex: 1 1 1;
+    /* Allow items to grow and shrink equally, with a base width of 100% */
+    text-align: center;
+    /* Center text within each item */
+  }
 
 }
