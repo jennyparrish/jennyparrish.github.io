@@ -79,29 +79,34 @@ header {
   padding: 0.6rem 1rem;
 }
 
+/* (optional) icon rotation when open */
 .nav-toggle-btn.open .nav-toggle-icon {
   transform: rotate(90deg);
 }
 
+/* Desktop: show nav along top edge as a horiontal bar, and hide the toggle button */
 @media (min-width: 800px) {
 
-  .site-nav-list.open {
-    display: block;
+  .nav-toggle-btn {
+    display: none;        /* Hide the toggle button on desktop, as the nav will be displayed as a horizontal bar */
   }
 
   .site-nav-list {
+    position: static;       /* Remove absolute positioning for desktop, allowing it to flow naturally in the layout */
+    top: auto;              /* Reset top position for desktop, as it will be displayed in the normal document flow */
+    left: auto;           /* Reset left position for desktop */ 
+    right: auto;          /* Reset right position for desktop */
+    background: transparent; /* Remove background for desktop, as it will be displayed as a horizontal bar */
+    box-shadow: none;     /* Remove box shadow for desktop, as it will be displayed as a horizontal bar */
     margin: 0;
     padding: 0;
-    list-style: none;
-    display: flex;
-    /* Use flexbox to layout the navigation items in a single row, allowing them to wrap if necessary */
-    justify-content: space-between;
-    /* Distribute items evenly with space between them */
-    align-items: center;
-    /* Vertically center items within the navigation bar */
-    width: 100%;
-    box-sizing: border-box;
-    /* Ensure the navigation list takes up the full width of its container */
+    transform: none;       /* Remove transform for desktop, as it will be displayed as a horizontal bar */
+    opacity: 1;            /* Ensure it's fully visible on desktop */
+    pointer-events: auto; /* Ensure it's interactive on desktop */
+    display: flex;        /* Use flexbox to layout the nav items horizontally on desktop */
+    justify-content: space-between; /* Distribute nav items evenly across the horizontal bar on desktop */
+    align-items: center;   /* Center nav items vertically within the horizontal bar on desktop */
+    width: 100%;          /* Ensure the nav bar takes the full width of the container on desktop */
   }
 
   .site-nav-list>li {
