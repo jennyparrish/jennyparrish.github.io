@@ -32,23 +32,31 @@
       }
     });
     
-    expanded = btn.getAttribute('aria-expanded') === 'true';
-    btn.setAttribute('aria-expanded', String(!expanded));
-    btn.classList.toggle('open', !expanded);
-    list.classList.toggle('open', !expanded);
-    
-    if (expanded) list.setAttribute('aria-hidden', 'true');
-    else list.removeAttribute('area-hidden');
-  });
-  }
+    // close on escape when open
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && btn.getAttribute('aria-expanded') === 'true') {
+        btn.click(); // trigger the click handler to close the menu
+        btn.focus(); // return focus to the toggle button
+      }
+    });
+
+    // keep desktop behavior if window is resized: make sure hidden attribute doesnt hide menu on desktop
+    const mq = window.matchMedia('(min-width: 800px)');
+    const syncDesktop = () => {
+      if (mq.matches) {
+        list.removeAttribute('hidden');
+        list.classList.remove('open');
+        btn.setAttribute('aria-expanded', 'false');
+        btn.classList.remove('open');
+      } else {
+        // mobile: keep it hidden by default if not explicity opened
+        if btn.getAttribute('aria-expanded') !== 'true') list.setAttribute('hidden', '');
+
+        }
+    };
+     mq.addEventListener ? mq.addEventListener('change', syncDesktop) : mq.addListener(syncDesktop);
+
+     syncDesktop();
+     
+  })();
   
-  btn.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape') {
-      btn.setAttribute('aria-expanded', 'flase');
-      btn.classList.remove('open');
-      list.setAttribute('hidden', '');
-      btn.focus();
-    }
-  });
-  
-})();
