@@ -29,6 +29,7 @@ header {
   z-index: 40;
 }
 
+/* Nav list - closed by default (mobile); hidden, but can be animated */
 .site-nav-list {
   position: absolute;
   top: 100%;
@@ -39,6 +40,12 @@ header {
   list-style: none;
   margin: 0;
   padding: 0.5rem 0;
+
+  /* animation-friendly closed state */
+  transform-origin: top;
+  transform: scaleY(0);
+  opacity: 0;
+  pointer-events: none;
 }
 
 .site-nav-list[hidden] {
