@@ -19,7 +19,9 @@
       // wait for transition then set hidden to remove from accessibility tree
       const onTransitionEnd = () => {
         list.setAttribute('hidden', '');
-        list.removeEventListener('transitioned', onTransitionEnd);
+        list.removeEventListener('transitionend', onTransitionEnd);
+      };
+      list.addEventListener('transitionend', onTransitionEnd);
       } else {
         // open the menu
         list.removeAttribute('hidden');       // make visible for transition
