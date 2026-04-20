@@ -146,7 +146,38 @@ body {
   margin: 0.75em auto 1rem;
   padding: 0 0.75rem;
 }
+
 .header-blurb h2 {
   margin: 0 0 0.25rem 0;
   font-size: 1rem;
+}
+
+/* desktop layout*/
+@media (min-width:800px) {
+  .nav-toggle {
+    display: none;
+  }                  /* hide toggle on desktop */
+  
+  .site-nav-list {
+    display: flex !important;
+    flex-direction: row;
+    gap: 0.5rem;
+    align-items: center;
+    padding: 0.5rem 0;
+  }
+
+  .site-nav {
+    border-top: 1px solid #e6e8eb;
+    padding: 0;
+  }
+
+  .site-title {
+    font-size:1.25rem;
+  }
+
+  .brand {
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+  }
 }
