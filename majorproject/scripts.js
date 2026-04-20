@@ -1,7 +1,11 @@
 (function() {
   const btn = document.querySelector('.nav-toggle-btn');
   const list = document.getElementById('site-nav-list');
-  if (btn && list) {
+  if (!btn || !list) return;
+
+  // Ensure initital ARIA states
+  btn.setAttribute('aria-expanded', 'false');
+  list.setAttribute('hidden', '');
   
   btn.addEventListener('click', () => {
     const expanded = btn.getAttribute('aria-expanded') === 'true';
