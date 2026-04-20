@@ -1,3 +1,5 @@
+/* Scripts for Major Project (Neighbors Helping Neighbors - Jenny Parrish) */
+
 document.addEventListener('DOMContentLoaded', () => {
   const toggle = document.querySelector('.nav-toggle');
   const nav = document.getElementById('site-nav-list');
