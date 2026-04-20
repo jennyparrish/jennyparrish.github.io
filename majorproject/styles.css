@@ -62,12 +62,13 @@ header {
 }
 
 .site-nav-list {
-  transform-origin: top;
-  transition: transform 180ms ease, opacity 160ms ease;
-  transform: scaleY(1);
+  transform-origin: top;        /* Set the origin for scaling to the top edge, so it collapses upwards */
+  transition: transform 180ms ease, opacity 160ms ease;   /* Smooth transition for opening/closing the nav list */
+  transform: scaleY(1);     /* Ensure the nav list is fully visible by default (for desktop) */
   opacity: 1;
 }
 
+/* List Items */
 .site-nav-list>li {
   padding: 0;
   text-align: left;
