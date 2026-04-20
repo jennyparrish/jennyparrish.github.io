@@ -42,18 +42,23 @@ header {
   padding: 0.5rem 0;
 
   /* animation-friendly closed state */
-  transform-origin: top;
-  transform: scaleY(0);
-  opacity: 0;
-  pointer-events: none;
+  transform-origin: top;                        /* Set the origin for scaling to the top edge, so it collapses upwards */
+  transform: scaleY(0);                   /* Scale down to 0 height to hide the nav list */ 
+  opacity: 0;                 /* Make it invisible when closed */
+  pointer-events: none;     /* Prevent interaction when closed */
+
+  transition: transform 180ms ease, opacity 160ms ease;     /* Smooth transition for opening/closing the nav list */
 }
 
 .site-nav-list[hidden] {
   display: none;
 }
 
+/* Open state (mobile): make visible and interactive */
 .site-nav-list.open {
-  display: block;
+  transform: scaleY(1);                   /* Scale back to full height to show the nav list */
+  opacity: 1;                 /* Make it fully visible */
+  pointer-events: auto;      /* Allow interaction when open */
 }
 
 .site-nav-list {
