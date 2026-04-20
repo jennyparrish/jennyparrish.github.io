@@ -110,10 +110,13 @@ header {
   }
 
   .site-nav-list>li {
-    flex: 1 1 1;
-    /* Allow items to grow and shrink equally, with a base width of 100% */
+    flex: 1 1 auto; /* Allow nav items to grow and shrink as needed, and take up equal space on desktop */
     text-align: center;
     /* Center text within each item */
+  }
+
+  .site-nav-list[hidden] { 
+    display: block; /* Ensure the nav list is still displayed on desktop, even if it has the hidden attribute, as the toggle button is hidden and the nav should always be visible on desktop */
   }
 
 }
