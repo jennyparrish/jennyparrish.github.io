@@ -12,75 +12,21 @@ body {
 }
 
 header {
-  width: 100%;
-  box-sizing: border-box;
-  position: relative;
   padding: 15px;
 }
 
 .site-nav {
   width: 100%;
-  box-sizing: border-box;
   position: relative;
   z-index: 30;
 }
-
-.site-nav-list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 100%;
-  box-sizing: border-box;
-}
-
-.site-nav-list > li {
-  flex: 1 1 1;
-  text-align: center;
-}
-
-.site-nav-list a {
-  display: inline-block;
-  padding: .75rem .5rem;
-  white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-}
-
-.nav-toggle-btn {
-  display: none;
-  align-items: center;
-  background: transparent;
-  border: none;
-  cursor: pointer;
-  font: inherit;
-}
-
-.nav-toggle-icon {
-  width: 30px;
-  height: 30px;
-  position: relative;
-  display: inline-block;
-}
-
-.nav-toggle-icon::before { top: 0; }
-.nav-toggle-icon::after { bottom: 0; }
-.nav-toggle-icon span { top: 50%; transform: translateY(-50%); display: block; }
-
-.nav-toggle-title { font-weight: 600; font-size: 0.95rem; }
-
-@media (max-width: 990px) {
-  .nav-toggle-btn { 
-    display: inline-flex;
-  }
   
   .nav-toggle-btn { 
+    display: inline-flex;
     position: relative;
     z-index: 40; 
   }
-  
+
   .site-nav-list {
     position: absolute;
     top: 100%;
@@ -92,8 +38,7 @@ header {
     margin: 0;
     padding: 0.5rem 0;
   }
-  
-  
+
   .site-nav-list[hidden] { display: none; }
   .site-nav-list.open {display: block; }
   .site-nav-list {
@@ -113,7 +58,24 @@ header {
     transform: rotate(90deg);
   }
 
-  @media (max-width: 1375px) {
-    
-  }
+@media (min-width: 800px) {
+
+.site-nav-list.open {display: block; }
+  
+.site-nav-list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  display: flex;                    /* Use flexbox to layout the navigation items in a single row, allowing them to wrap if necessary */
+  justify-content: space-between;   /* Distribute items evenly with space between them */
+  align-items: center;              /* Vertically center items within the navigation bar */ 
+  width: 100%;
+  box-sizing: border-box;           /* Ensure the navigation list takes up the full width of its container */
+}
+
+.site-nav-list > li {
+  flex: 1 1 1;              /* Allow items to grow and shrink equally, with a base width of 100% */
+  text-align: center;       /* Center text within each item */
+}
+
 }
