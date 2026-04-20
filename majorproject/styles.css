@@ -1,20 +1,21 @@
 /* Stylesheet for Major Project (Neighbors Helping Neighbors - Jenny Parrish) */
 
 :root {
-  --bg:#fff;
-  --text:#222;
-  --accent:#0b6cff;
-  --muted:#6b7280;
-  --nav-hover:#eef6ff;
-  --max:1100px;
-  --gap:1rem;
+  --bg: #fff;
+  --text: #222;
+  --accent: #0b6cff;
+  --muted: #6b7280;
+  --nav-hover: #eef6ff;
+  --max: 1100px;
+  --gap: 1rem;
 }
 
 * {
   box-sizing: border-box;
 }
 
-html, body {
+html,
+body {
   height: 100%;
 }
 
@@ -43,7 +44,7 @@ body {
 
 /* brand */
 .brand {
-  display: flax;
+  display: flex;
   flex-direction: column;
 }
 
@@ -67,5 +68,76 @@ body {
   padding: 0.4rem 0.6rem;
   border-radius: 6px;
   background: transparent;
+  border: 1px solid transparent;
   cursor: pointer;
 }
+
+.nav-toggle:focus {
+  outline: 3px solid rgba(11, 108, 255, 0.12);
+  outline-offset: 2px;
+}
+
+.nav-icon {
+  width: 18px;
+  height: 14px;
+  display: inline-block;
+  position: relative;
+}
+
+.nav-icon::before,
+.nav-icon::after,
+.nav-icon span {
+  content: "";
+  position: absolute;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: var(--text);
+  border-radius: 2px;
+}
+
+.nav-icon::before {top: 0}
+
+.nav-icon::after{bottom:0}
+
+/* nav */
+.site-nav {
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 0 0.75rem;
+}
+
+.site-nav-list {
+  list-style: none;
+  margin: 0;
+  padding: 0.5rem 0;
+  display: none;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+/* when open on mobile */
+.site-nav-list.isOpen {
+  display: flex;
+}
+
+/* links */
+.site-nav-list a {
+  display: block;
+  padding: 0.5rem 0.75rem;
+  text-decoration: none;
+  color: var(--text);
+  border-radius: 6px;
+}
+
+.site-nav-list a:hover,
+.site-nav-list a:focus {
+  background: var(--nav-hover);
+}
+
+.site-nav-list a[aria-current="page"] {
+  color: var(--accent);
+  font-weight: 600;
+}
+
+/* header blurb */
