@@ -52,7 +52,7 @@
         btn.classList.remove('open');
       } else {
         // mobile: keep it hidden by default if not explicity opened
-        if btn.getAttribute('aria-expanded') !== 'true') list.setAttribute('hidden', '');
+        if (btn.getAttribute('aria-expanded') !== 'true') list.setAttribute('hidden', '');
 
         }
     };
