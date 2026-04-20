@@ -30,6 +30,7 @@
         btn.classList.add('open');
         list.classList.add('open');
       }
+    });
     
     expanded = btn.getAttribute('aria-expanded') === 'true';
     btn.setAttribute('aria-expanded', String(!expanded));
