@@ -1,58 +1,33 @@
-/* Scripts for Major Project (Neighbors Helping Neighbors - Jenny Parrish) */
 document.addEventListener('DOMContentLoaded', () => {
-  const btn = document.querySelector('.nav-toggle-btn');
-  const navList = document.getElementById('site-nav-list');
-  if (!btn || !navList) return;
+  const toggle = document.querySelector('.nav-toggle');
+  const nav = document.getElementById('site-nav-list');
+  if (!nav) return;
 
-  const mq = window.matchMedia('(min-width: 800px)');
-  let isOpen = false;
+  // Ensure mobile starts collapsed; desktop will override via media query
+  nav.classList.remove('is-open');
+  if (toggle) toggle.setAttribute('aria-expanded', 'false');
 
-  function setOpen(open) {
-    isOpen = Boolean(open);
-    btn.setAttribute('aria-expanded', String(isOpen));
-    if (isOpen) {
-      navList.classList.add('open');
-      navList.setAttribute('hidden', '');
-    }
+  if (toggle) {
+    toggle.addEventListener('click', () => {
+      const opened = nav.classList.toggle('is-open');
+      toggle.setAttribute('aria-expanded', String(opened));
+    });
   }
 
-  btn.addEventListener('click', (e) => {
-    e.stopPropagation();
-    setOpen(!isOpen);
-  });
-
-  // close when a nav link is clicked
-  navList.addEventListener('click', (e) => {
-    if (e.target.tagName === 'A') setOpen(false);
-    e.stopPropagation();
-  });
-
-  // click outside to close (mobile only)
-  document.addEventListener('click', (e) => {
-    if (mq.matches) return; // only close on mobile
-    if (!navList.contains(e.target) && !btn.contains(e.target)) setOpen(false);
-  });
-
-  // Escape to close 
-  document.addEventListener('keydown', (e) => {
-    if (e.key === 'Escape' && !mq.matches) setOpen(false);
-  });
-
-  // ensure correct state on load/resize
-  let resizeTimer;
-  function syncForViewport() {
-    if (mq.matches) {
-      btn.setAttribute('aria-expanded', 'false');
-      navList.classList.add('open');
-      navList.removeAttribute('hidden');
-      isOpen = false;
+  // Keep state synced on resize (desktop forces visible)
+  const mql = window.matchMedia('(min-width:800px)');
+  function sync(e) {
+    if (e.matches) {
+      // desktop: ensure visible, but keep toggle aria false (toggle hidden)
+      nav.classList.add('is-open');
+      if (toggle) toggle.setAttribute('aria-expanded', 'false');
     } else {
-      setOpen(false);
+      // mobile: collapse by default
+      nav.classList.remove('is-open');
+      if (toggle) toggle.setAttribute('aria-expanded', 'false');
     }
   }
-  window.addEventListener('resize', () => {
-    clearTimeout(resizeTimer);
-    resizeTimer = setTimeout(syncForViewport, 120);
-  });
-  syncForViewport()
+  // initial sync and listen for changes
+  sync(mql);
+  mql.addEventListener('change', sync);
 });
