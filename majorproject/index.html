@@ -3,20 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Home</title>
+    <title>Neighbors Helping Neighbors</title>
 
     <link rel="stylesheet" href="styles.css">
-    <script src="scripts.js" defer></script>
-  
+    <script src="scripts.js" defer></script> 
 </head>
 <body>
-
-    <header>
-        <nav class="site-nav">
-            <button class="nav-toggle-btn" aria-controls="site-nav-list" aria-expanded="false" aria-label="Toggle navigation">
-              <span class="nav-toggle-icon" aria-hidden="true"></span>
-              <span class="nav-toggle-title">Nav List</span>
+    <header class="'site-header">
+        <div class="header-row">
+            <button class="nav-toggle" aria-controls="site-nav-list" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="nav-icon" aria-hidden="true"></span>
+              <span class="nav-label">Menu</span>
           </button>
+
+          <div class="brand">
+            <h1>Neighbors Helping Neighbors</h1>
+            <p class="site-subtitle">A Community Resource</p>
+          </div>
+        </div>
             <!-- For single-link navs / extra context, added aria-current="page" on the active link -->
             <ul id="site-nav-list" class="site-nav-list" hidden>  <!-- Navigation links -->
                 <li><a href="/">Home</a></li>
@@ -31,8 +35,6 @@
                 <li><a href="/contact.html">Contact Us</a></li>
             </ul>
         </nav>
-        <h1>Neighbors Helping Neighbors</h1>
-        <h2>A Community Resource</h2>
         <h3>Kindness is contagious - be a superspreader.</h3>
         <p>We have one Earth - together, we can keep useful treasures out of landfills.</p>
     </header>
