@@ -30,7 +30,7 @@ body {
 .page {
   display: flex;
   flex-direction: column;
-  min-height: 90vh;
+  min-height: 70vh;
 }
 
 .site-header {
