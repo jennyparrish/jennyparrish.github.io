@@ -30,7 +30,7 @@ body {
 .page {
   display: flex;
   flex-direction: column;
-  min-height: 85vh;
+  min-height: 73vh;
 }
 
 .site-header {
@@ -175,6 +175,40 @@ footer {
 
 footer p {
   bottom: 0;
+}
+
+
+/* Bottom blurb placenment on different sized screens */
+
+@media (min-width: 400px) {
+  .nav-toggle {
+    display: none;
+  }
+
+  .page {
+    min-height: 70vh;
+  }
+}
+
+/* Tablet layout */
+@media (min-width: 410px) {
+  .nav-toggle {
+    display: none;
+  }
+
+  .page {
+    min-height: 80vh;
+  }
+}
+
+@media (min-width: 710px) {
+  .nav-toggle {
+    display: none;
+  }
+
+  .page {
+    min-height: 87vh;
+  }
 }
 
 /* Desktop layout */
