@@ -159,7 +159,9 @@ footer {
   border-top: 1px solid #e6e8eb;
   background: linear-gradient(180deg, #fbfdff, #fff);
   text-align: center;
+  font-size: 12px;
 }
+
 /* footer blurb */
 .footer-blurb {
   max-width: var(--max);
