@@ -144,6 +144,13 @@ body {
   font-weight: 600;
 }
 
+main {
+  flex: 1 0 auto;
+  max-width: var(--max);
+  margin: 1rem auto;
+  padding: 0 0.75rem;
+}
+
 footer {
   display: flex;
   flex-direction: column;
