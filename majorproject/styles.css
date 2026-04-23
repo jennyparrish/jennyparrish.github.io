@@ -27,6 +27,12 @@ body {
   line-height: 1.4;
 }
 
+.page {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
 .site-header {
   border-bottom: 1px solid #e6e8eb;
   background: linear-gradient(180deg, #fff, #fbfdff);
@@ -143,14 +149,14 @@ body {
   color: var(--accent);
   font-weight: 600;
 }
-
+/*
 main {
   flex: 1 0 auto;
   max-width: var(--max);
   margin: 1rem auto;
   padding: 0 0.75rem;
 }
-
+*/
 footer {
   display: flex;
   flex-direction: column;
