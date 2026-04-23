@@ -30,7 +30,7 @@ body {
 .page {
   display: flex;
   flex-direction: column;
-  min-height: 73vh;
+  min-height: 78vh;
 }
 
 .site-header {
@@ -179,37 +179,19 @@ footer p {
 
 
 /* Bottom blurb placenment on different sized screens */
-
-@media (min-width: 400px) {
-  .nav-toggle {
-    display: none;
+/*@media (min-width: 600px) {
+  .footer-blurb {
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+    justify-content: space-between;
   }
 
-  .page {
-    min-height: 70vh;
+  .footer-blurb h2 {
+    font-size: 1.125rem;
   }
-}
-
-/* Tablet layout */
-@media (min-width: 410px) {
-  .nav-toggle {
-    display: none;
-  }
-
-  .page {
-    min-height: 80vh;
-  }
-}
-
-@media (min-width: 710px) {
-  .nav-toggle {
-    display: none;
-  }
-
-  .page {
-    min-height: 87vh;
-  }
-}
+}*/
 
 /* Desktop layout */
 @media (min-width:900px) {
@@ -239,5 +221,9 @@ footer p {
     flex-direction: row;
     align-items: center;
     gap: 1rem;
+  }
+
+  .page {
+    min-height: 87vh;
   }
 }
