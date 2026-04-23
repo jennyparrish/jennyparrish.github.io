@@ -144,6 +144,14 @@ body {
   font-weight: 600;
 }
 
+footer {
+  display:  flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 1px solid #e6e8eb;
+  background: linear-gradient(180deg, #fbfdff, #fff);
+  text-align: center;
+}
 /* footer blurb */
 .footer-blurb {
   max-width: var(--max);
@@ -168,7 +176,7 @@ footer p {
 
   /* hide toggle on desktop */
   .site-nav-list {
-    display: flex !important;
+    display: flex;
     flex-direction: row;
     gap: 0.5rem;
     align-items: center;
