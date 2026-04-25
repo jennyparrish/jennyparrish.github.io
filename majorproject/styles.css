@@ -263,7 +263,7 @@ form {
     width: 280px;       /* fixed width for cards on larger screens */
     flex: 0 0 auto;     /* prevent shrinking and allow horizontal scrolling */
   }
-
+}
   /*.footer-blurb {
     display: flex;
     flex-direction: row;
