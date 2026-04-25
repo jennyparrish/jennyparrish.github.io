@@ -221,7 +221,7 @@ footer p {
   border-radius: 6px;
 }
 .item-card p {
-  grid-row: 1/-1;
+  width: 100%;
 }
 
 /* Contact Us Page */
