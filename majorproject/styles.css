@@ -150,6 +150,10 @@ body {
   font-weight: 600;
 }
 
+main {
+  margin: 10px;
+}
+
 footer {
   display: flex;
   flex-direction: column;
@@ -181,7 +185,7 @@ footer p {
 
 .scroll-wrapper {
   display: grid;
-  width: 100%;
+  width: 95%;
   overflow-y: hidden;
   overflow-x: auto;
   gap: 0 20px;
@@ -207,7 +211,7 @@ footer p {
   font-size: 1.2rem;
   margin: 0;
   padding: 0.75rem 0;
-  font-style: bold;
+  font-weight: 600;
 }
 
 .item-image {
