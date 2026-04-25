@@ -211,8 +211,8 @@ footer p {
 }
 
 .item-image {
-  width: 100px;
-  height: 100px;
+  max-width: 150px;
+  height: auto;
   object-fit: cover;
   border-radius: 6px;
 }
