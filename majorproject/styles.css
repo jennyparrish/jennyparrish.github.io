@@ -220,6 +220,9 @@ footer p {
   object-fit: cover;
   border-radius: 6px;
 }
+.item-card p {
+  grid-row: 1/-1;
+}
 
 /* Contact Us Page */
 .site-contactus {
