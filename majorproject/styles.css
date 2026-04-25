@@ -177,6 +177,29 @@ footer p {
   bottom: 0;
 }
 
+/* Home page */
+
+div.site-main {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  max-width: var(--max);
+  margin: 0 auto;
+  padding: 0.75rem;
+}
+
+.item-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.item-card {
+  border: 1px solid #e6e8eb;
+  border-radius: 6px;
+  padding: 0.75rem;
+}
+
 /* Contact Us Page */
 .site-contactus {
   display: flex;
