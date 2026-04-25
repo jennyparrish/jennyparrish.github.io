@@ -185,15 +185,17 @@ footer p {
 
 .scroll-wrapper {
   display: flex;
-  align-items: flex-start; 
-  gap: 16px;
-  overflow-x: auto;
+  flex-direction: column; 
+  gap: 12px;
+  align-items: stretch;
+  overflow-x: visible;
+  overflow-y:auto;
   padding: 12px;
   box-sizing: border-box;
 }
 
 .item-card {
-  width: 280px;
+  width: 100%;
   background: #fff;
   border-radius: 8px;
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
@@ -247,8 +249,21 @@ form {
 }
 
 /* Bottom blurb placenment on different sized screens */
-/*@media (min-width: 600px) {
-  .footer-blurb {
+@media (min-width: 641px) {
+  .scroll-wrapper {
+    flex-direction: row;      /* horizontal layout on larger screens */
+    align-items: flex-start;  /* align items to the top */
+    overflox-x: auto;         /* enable horizontal scrolling if needed */
+    overflow-y: hidden;       /* hide vertical scrollbar */
+    gap: 16px;                /* increase gap between cards on larger screens */
+  }
+
+  .item-card {
+    width: 280px;       /* fixed width for cards on larger screens */
+    flex: 0 0 auto;     /* prevent shrinking and allow horizontal scrolling */
+  }
+
+  /*.footer-blurb {
     display: flex;
     flex-direction: row;
     gap: 1rem;
