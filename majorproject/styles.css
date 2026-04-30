@@ -379,14 +379,16 @@ form {
   gap: 0.75rem;
 }
 
+/************************** End of Individual Page Attributes ********************************/
 
-/************************ Start of Media Queries for Responsive Design  *************************
+/********************* Start of Media Queries for Responsive Design  *************************/
     /* Responsive display on Tablet */
 @media (min-width: 641px) {
 
   .item-card {
     max-width: 46%;
-    flex: 0 0 46%;
+    flex: 0 0 calc(50% - (var(--card-gap)/2));
+    max-width: calc(50% - (var(--card-gap)/2));
     /* prevent shrinking and allow horizontal scrolling */
   }
 
@@ -454,11 +456,21 @@ form {
 
   .item-card {
     max-width: 30%;
-    flex: 0 0 calc((100% - 32px)/3);
-    max-width: calc((100% -32px)/3);
+    flex: 0 0 calc((100% - (var(--card-gap) * 2))/3);
+    max-width: calc((100% - (var(--card-gap) * 2))/3);
+     /* show 3 cards side-by-side, with gaps between */
   }
 
   .item-image {
     height: 220px;
+  }
+
+  .slider-controls {
+    top: 12px;
+    padding: 0 18px;
+  }
+
+  .slider-button {
+    background: rgba(255,255,255,.95);
   }
 }
