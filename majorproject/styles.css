@@ -240,6 +240,34 @@ body {
   -webkit-overflow-scrolling: touch;
 }
 
+    /* Slider frame, controls, dots */
+  .slider-wrap {
+    position: relative;
+  }
+
+  .carousel {
+    display: flex;
+    gap: var(--card-gap);
+    overflow: hidden;
+    padding: 12px;
+    padding-bottom: 18px;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+    -webkit-overflow-scrolling: touch;
+  }
+
+  .slider-controls {
+    position: absolute;
+    inset-inline: 0;
+    top: 8px;
+    display: flex;
+    justify-content: space-between;
+    pointer-events: none;
+    padding: 0 8px;
+  }
+
+  .
+
 .item-card {
   flex: 0 0 84%;
   max-width: 84%;
