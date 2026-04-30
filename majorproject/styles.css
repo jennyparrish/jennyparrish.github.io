@@ -114,7 +114,7 @@ body {
   transform: translateY(-50%);
 }
 
-/* Nav */
+/* Nav container (mobile first: hidden until toggled) */
 .site-nav {
   max-width: var(--max);
   margin: 0 auto;
@@ -123,15 +123,22 @@ body {
 
 .site-nav-list {
   position: fixed;
-  top: 55px; 
-  background-color: lightblue;;
+  inset-inline: 0;
+  top: 58px; 
+  background: var(--nav-bg );
   list-style: none;
   margin: 0;
-  padding: 0.5rem 0;
-  display: none;
+  padding: 0.5rem;
+  display: flex;
   /* hidden by default on mobile */
   flex-direction: column;
   gap: 0.25rem;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  transform-origin: top; transition: opacity .18s ease, transform .18s ease;
+  opacity: 0;
+  pointer-events: none;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
 
 /* when open on mobile */
