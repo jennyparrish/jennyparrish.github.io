@@ -8,6 +8,9 @@
   --nav-bg: #ffffffcc;
   --max: 1200px;
   --gap: 1rem;
+  --card-gap: 16px;
+  --bp-tablet: 641px;
+  --bp-desktop: 980px;
 }
 
 * {
@@ -299,6 +302,11 @@ body {
     background: #d1d5db;
     border: none;
     cursor: pointer;
+  }
+
+  .slider-dot[aria-pressed="true"] {
+    background: var(--accent);
+    box-shadow: 0 0 0 3px rgba(11,108,255,.08);
   }
 
 .item-card {
