@@ -49,6 +49,12 @@ body {
   flex-direction: column;
 }
 
+div.site-header {
+  border-bottom: 1px solid #e6e8eb;
+  background: linear-gradient(180deg, #fff, #fbfdff);
+
+}
+
 .site-title {
   margin: 0;
   font-size: 1.125rem;
@@ -306,6 +312,12 @@ form {
     display: none;
   }
 
+  div#site-header {
+  border-bottom: 1px solid #e6e8eb;
+  background: linear-gradient(180deg, #fff, #fbfdff);
+  width: 100%;
+}
+
   /* hide toggle on desktop */
   .site-nav-list {
     position:
@@ -342,9 +354,5 @@ form {
     flex-direction: row;
     align-items: center;
     gap: 1rem;
-  }
-
-  .page {
-    min-height: 87vh;
   }
 }
