@@ -33,3 +33,4 @@ document.addEventListener('DOMContentLoaded', () => {
   sync(mql);
   mql.addEventListener('change', sync);
 });
+
