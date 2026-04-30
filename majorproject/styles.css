@@ -28,7 +28,12 @@ body {
 }
 
 
+  /* Header */
 .site-header {
+  position: fixed;
+  top: 0;
+  inset-inline: 0;
+  z-index: 80;
   border-bottom: 1px solid #e6e8eb;
   background: linear-gradient(180deg, #fff, #fbfdff);
 }
