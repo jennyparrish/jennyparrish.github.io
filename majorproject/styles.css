@@ -28,7 +28,7 @@ body {
 }
 
 
-  /* Header */
+    /* Header */
 .site-header {
   position: fixed;
   top: 0;
@@ -48,21 +48,15 @@ body {
   justify-content: space-between;
 }
 
-/* Brand */
+    /* Brand */
 .brand {
   display: flex;
   flex-direction: column;
 }
 
-div.site-header {
-  border-bottom: 1px solid #e6e8eb;
-  background: linear-gradient(180deg, #fff, #fbfdff);
-
-}
-
 .site-title {
   margin: 0;
-  font-size: 1.125rem;
+  font-size: 1.2rem;
 }
 
 .site-subtitle {
@@ -71,7 +65,7 @@ div.site-header {
   font-size: 0.9rem;
 }
 
-/* Toggle (mobile) */
+    /* Toggle (mobile) */
 .nav-toggle {
   display: inline-flex;
   align-items: center;
@@ -113,6 +107,11 @@ div.site-header {
 
 .nav-icon::after {
   bottom: 0;
+}
+
+.nav-icon span {
+  top: 50%;
+  transform: translateY(-50%);
 }
 
 /* Nav */
