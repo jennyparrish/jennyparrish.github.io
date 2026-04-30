@@ -232,7 +232,7 @@ body {
   margin: 0.25rem 0 0.5rem 0;
 }
 
-/* Scroll-wrapper: horizontal carousel */
+/* Scroll-wrapper: horizontal carousel 
 .scroll-wrapper {
   display: flex;
   gap: 12px;
@@ -241,7 +241,7 @@ body {
   padding-bottom: 18px;
   scroll-snap-type: x mandatory;
   -webkit-overflow-scrolling: touch;
-}
+}*/
 
     /* Slider frame, controls, dots */
   .slider-wrap {
@@ -447,12 +447,6 @@ form {
   }
 
   /* Carousel: show 3 cards side-by-side centered */
-  .scroll-wrapper {
-    justify-content: flex-start;
-    gap: 16px;
-    overflow: visible;
-    scroll-snap-type: none;
-  }
 
   .item-card {
     max-width: 30%;
