@@ -171,8 +171,15 @@ body {
   font-weight: 600*;
 }
 
-main {
-  margin: 10px;
+.site-main {
+  padding-top: 1.25rem;
+  max-width: var(--max);
+  margin: 0 auto;
+  padding-left: .75rem; padding-right: .75rem;
+}
+
+.page-spacer {
+  height: calc(58px + 0.75rem);
 }
 
 footer {
@@ -202,8 +209,27 @@ footer p {
   bottom: 0;
 }
 
-/* Home page */
+    /* Home page */
+    /* Welcome */
+.welcome-section {
+  padding: 0 0 1rem 0;
+  margin-top: 0;
+}
+.welcome-section h2 {
+  margin-top: 0.5rem;
+}
 
+    /* Featured items carousel */
+
+.featured-items {
+  margin: 1rem 0;
+}
+
+.featured-items h2 {
+  margin: 0.25rem 0 0.5rem 0;
+}
+
+    /* Scroll-wrapper: horizontal carousel */
 .scroll-wrapper {
   display: flex;
   flex-direction: column; 
