@@ -266,7 +266,40 @@ body {
     padding: 0 8px;
   }
 
-  .
+  .slider-button {
+    pointer-events: auto;
+    border: 0;
+    background: rgba(255,255,255,.9);
+    backdrop-filter: blur(4px);
+    padding: 8px;
+    border-radius: 8px;
+    cursor: pointer;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 2px 8px rgba(0,0,0,.08);
+  }
+
+  .slider-button:focus {
+    outline: 3px solid rgba(11, 108, 255, 0.12);
+    outline-offset: 2px;
+  }
+
+  .slider-footer {
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+    margin-top: 8px;
+  }
+
+  .slider-dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background: #d1d5db;
+    border: none;
+    cursor: pointer;
+  }
 
 .item-card {
   flex: 0 0 84%;
