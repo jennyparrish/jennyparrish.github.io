@@ -182,18 +182,16 @@ body {
   height: calc(58px + 0.75rem);
 }
 
-footer {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
+    /* Footer */
+.site-footer {
+  margin-top: 2rem;
   border-top: 1px solid #e6e8eb;
-  background: linear-gradient(180deg, #fbfdff, #fff);
+  background: linear-gradient(180deg,#fbfdff,#fff);
   text-align: center;
-  font-size: 12px;
+  padding: 1rem;
 }
 
-/* footer blurb */
+  /* footer blurb */
 .footer-blurb {
   max-width: var(--max);
   margin: 0.75rem auto 1rem;
