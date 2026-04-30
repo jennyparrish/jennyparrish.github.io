@@ -248,6 +248,11 @@ footer p {
   margin: 50px auto;
 }
 
+#tos-list {
+  list-style: disc;
+  margin: ;
+}
+
 /* Contact Us Page */
 .site-contactus {
   display: flex;
