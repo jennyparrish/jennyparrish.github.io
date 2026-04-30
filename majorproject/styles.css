@@ -27,11 +27,6 @@ body {
   line-height: 1.4;
 }
 
-.page {
-  display: flex;
-  flex-direction: column;
-  min-height: 78vh;
-}
 
 .site-header {
   border-bottom: 1px solid #e6e8eb;
