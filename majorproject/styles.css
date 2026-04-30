@@ -232,6 +232,13 @@ footer p {
   line-height: 1.4;
   box-sizing: border-box;
 }
+/* Policies page (Terms of Service and Privacy) */
+#policy-main {
+  max-width: 800px;
+  line-height: 1.5;
+  margin: 0 auto;
+  padding: 0.75rem;
+}
 
 /* Contact Us Page */
 .site-contactus {
