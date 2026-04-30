@@ -363,37 +363,28 @@ form {
     width: 100%;
   }
 
-  div#site-header {
-  border-bottom: 1px solid #e6e8eb;
-  background: linear-gradient(180deg, #fff, #fbfdff);
-  width: 100%;
-}
-
-  .site-nav-list {
-  position: fixed;
-  top: 55px; 
-  background-color: lightblue;;
-  list-style: none;
-  margin: 0;
-  padding: 0.5rem 0;
-  display: none;
-  /* hidden by default on mobile */
-  flex-direction: column;
-  gap: 0.25rem;
-}
-
   .site-nav {
-    border-top: 1px solid #e6e8eb;
     padding: 0;
   }
-
-  .site-title {
-    font-size: 1.25rem;
+  .site-nav-list a {
+    padding: 6rem 1rem;
   }
 
-  .brand {
-    flex-direction: row;
-    align-items: center;
-    gap: 1rem;
+    /* Carousel: show 3 cards side-by-side centered */
+  .scroll-wrapper {
+    justify-content: flex-start;
+    gap: 16px;
+    overflow: visible;
+    scroll-snap-type: none;
+  }
+
+  .item-card {
+    max-width: 30%;
+    flex: 0 0 calc((100% - 32px)/3);
+    max-width: calc((100% -32px)/3);
+  }
+
+  .item-image {
+    height: 220px;
   }
 }
