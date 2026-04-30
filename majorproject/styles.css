@@ -143,13 +143,19 @@ body {
 
 /* when open on mobile */
 .site-nav-list.is-open {
-  display: flex;
+  opacity: 1;
+  pointer-events: auto;
+  transform: translateY(0);
+}
+
+.site-nav-list-anim {
+  transition: none;
 }
 
 /* links */
 .site-nav-list a {
   display: block;
-  padding: 0.5rem 0.75rem;
+  padding: 0.6rem 0.9rem;
   text-decoration: none;
   color: var(--text);
   border-radius: 6px;
@@ -157,12 +163,12 @@ body {
 
 .site-nav-list a:hover,
 .site-nav-list a:focus {
-  background: var(--nav-hover);
+  background: #eef6ff;
 }
 
 .site-nav-list a[aria-current="page"] {
   color: var(--accent);
-  font-weight: 600;
+  font-weight: 600*;
 }
 
 main {
