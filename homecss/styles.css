@@ -126,3 +126,46 @@
   .menu.show {
     display:block;
 }
+
+  .menu a {
+    display: block;
+    padding: .5rem .6rem;
+    border-radius: 6px;
+    color: #123;
+    text-decoration: none;
+    transition: background .08s;
+  }
+
+  .menu a:hover {
+    background: var(--muted);
+}
+
+  /* Major project highlight */
+  .major-proj {
+    display: inline-block;
+    padding: .6rem .9rem;
+    color: white;
+    border-radius: 10px;
+    text-decoration: none;
+    box-shadow: 0 8px 24px rgba(107,142,35,0.18);
+  }
+
+  footer {
+    font-size: .9rem;
+    text-align: center;
+    color: #667;
+    margin-top:1rem;
+}
+
+  /* Responsive */
+  @media (max-width:900px){
+
+    main {
+        grid-template-columns:1fr;
+    }
+
+    .menu {
+        right: auto;
+        left: 0;
+    }
+  }
