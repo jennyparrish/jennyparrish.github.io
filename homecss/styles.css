@@ -1,26 +1,128 @@
 /* CSS for Home Page - Jenny P */
 
-body {
-    background-color: #f0f0f0;
-    font-family: Arial, sans-serif;
+  :root{
+    --accent: #6b8e23;
+    --muted: #f6f7f3;
+    --card: #ffffff;
+    --glass: rgba(255,255,255,0.6);
+    --shadow: 0 6px 18px rgba(0,0,0,0.08);
+    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  }
+
+  body {
     margin: 0;
-    padding: 20px;
+    color: #223;
+    line-height: 1.45;
+    padding: 2rem;
+  }
+
+  header{
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+  }
+
+  h1 {
+    margin: 0;
+    font-size: 1.8rem;
+    color: var(--accent);
+}
+  header p {
+    margin: 0;
+    color: #445;
 }
 
-h1 {
-    color: #333;
-    text-align: center;
+  main {
+    display: grid;
+    grid-template-columns: 1fr 320px;
+    gap: 1rem;
+    align-items: start;
+  }
+
+  /* card styling for sections */
+  section, footer {
+    background: var(--card);
+    border-radius: 12px;
+    padding: 1rem;
+    box-shadow: var(--shadow);
+  }
+
+  /* Button list (Activities) */
+  .btn-list{
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5rem;
+  }
+
+  .btn-list button {
+    appearance: none;
+    border: 1px solid rgba(34,34,34,0.08);
+    padding: .6rem .8rem;
+    border-radius: 8px;
+    cursor: pointer;
+    display: inline-flex;
+    gap: .5rem;
+    align-items: center;
+    font-size: .95rem;
+    transition: transform .12s ease, box-shadow .12s;
+  }
+
+  .btn-list button:hover { 
+    transform: translateY(-3px); 
+    box-shadow: 0 8px 20px rgba(0,0,0,0.06); 
 }
 
-p {
-    color: #666;
-    font-size: 16px;
-    line-height: 1.5;
-    max-width: 600px;
-    margin: 20px auto;
+  .btn-list button:active { 
+    transform: translateY(-1px); 
 }
 
-h2 {
+  .btn-list button .badge {
+    background: var(--accent);
+    color: #fff;
+    padding: .15rem .45rem;
+    border-radius: 999px;
+    font-size: .75rem;
+  }
 
+  /* Dropdown (Tiny Projects) */
+  .dropdown {
+    position: relative;
+  }
+
+  .dropdown-toggle {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: .5rem;
+    padding: .75rem;
+    border-radius: 10px;
+    background: var(--muted);
+    border: 1px solid rgba(34,34,34,0.06);
+    cursor: pointer;
+    font-size: 1rem;
+  }
+
+  .dropdown-toggle:focus {
+    outline:3px solid rgba(107,142,35,0.15);
 }
 
+  .menu {
+    position: absolute;
+    right: 0;
+    left: 0;
+    margin-top: .5rem;
+    background: var(--card);
+    border-radius: 10px;
+    box-shadow: var(--shadow);
+    padding: .5rem;
+    display: none;
+    max-height: 320px;
+    overflow: auto;
+    z-index: 10;
+  }
+
+  .menu.show {
+    display:block;
+}
