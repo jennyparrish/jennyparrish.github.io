@@ -33,7 +33,7 @@
                 <li><a href="/majorproject/policies.html">Important Policies</a></li>
                 <li><a href="/majorproject/forparents.html" aria-current="page">Parents Zone</a></li>
                 <li><a href="/majorproject/furniture.html">Furniture Zone</a></li>
-                <li><a href="/majorproject/newsandresources.html">News &amp; Resources</a></li>
+                <li><a href="/majorproject/messagecenter.html">Message Center</a></li>
                 <li><a href="/majorproject/help.html">Help &amp; F.A.Q.s</a></li>
                 <li><a href="/majorproject/thankyou.html">Thank you</a></li>
                 <li><a href="/majorproject/contactus.html">Contact Us</a></li>
@@ -43,13 +43,104 @@
 
     <main class="site-main">
         <div class="page">
+<section class="parents-zone">
+  <div class="pz-header">
+    <h2>Parents Zone</h2>
+    <p class="pz-greeting">Find or offer items to nearby parents — swap, lend, or give away. Use the filters to narrow results.</p>
+  </div>
 
-            <h2>Parents Zone</h2>
-            <p>Coming Soon!</p>
+  <div class="pz-layout">
+    <aside class="pz-filters" aria-label="Filters">
+      <form method="get" action="#" class="pz-filter-form">
+        <fieldset>
+          <legend>Age</legend>
+          <label><input type="radio" name="age" value="" checked> Any</label><br>
+          <label><input type="radio" name="age" value="0-6"> 0–6 months</label><br>
+          <label><input type="radio" name="age" value="6-24"> 6–24 months</label><br>
+          <label><input type="radio" name="age" value="2-5"> 2–5 years</label>
+        </fieldset>
 
+        <fieldset style="margin-top:1rem">
+          <legend>Gender</legend>
+          <label><input type="checkbox" name="boy" value="1"> Boy</label><br>
+          <label><input type="checkbox" name="girl" value="1"> Girl</label>
+        </fieldset>
 
-        <!-- page content -->
+        <p style="margin-top:1rem;font-size:0.95rem;color:#425066">Filter listings.</p>
+      </form>
+    </aside>
 
+    <main class="pz-main" aria-live="polite">
+      <div class="pz-grid">
+        <!-- Card 1 -->
+        <article class="pz-card" data-age="6-24" data-gender="boy">
+          <div class="pz-media" role="img" aria-label="Blue stroller"></div>
+          <h3 class="pz-title">Lightweight Stroller</h3>
+          <p class="pz-desc">Compact stroller, great for travel. Minor scuffs.</p>
+          <div class="pz-actions">
+            <button class="pz-btn" type="button">Request info</button>
+            <label class="pz-save"><input type="checkbox" name="save-1" aria-label="Save listing"><span class="heart" aria-hidden="true">♡</span></label>
+          </div>
+        </article>
+
+        <!-- Card 2 -->
+        <article class="pz-card" data-age="2-5" data-gender="girl">
+          <div class="pz-media" role="img" aria-label="Doll set"></div>
+          <h3 class="pz-title">Doll & Accessories</h3>
+          <p class="pz-desc">Set of dolls with clothing and stroller.</p>
+          <div class="pz-actions">
+            <button class="pz-btn" type="button">Request info</button>
+            <label class="pz-save"><input type="checkbox" name="save-2" aria-label="Save listing"><span class="heart" aria-hidden="true">♡</span></label>
+          </div>
+        </article>
+
+        <!-- Card 3 -->
+        <article class="pz-card" data-age="0-6" data-gender="">
+          <div class="pz-media" role="img" aria-label="Baby swing"></div>
+          <h3 class="pz-title">Baby Swing</h3>
+          <p class="pz-desc">Electric swing with multiple speeds. Clean and functional.</p>
+          <div class="pz-actions">
+            <button class="pz-btn" type="button">Request info</button>
+            <label class="pz-save"><input type="checkbox" name="save-3" aria-label="Save listing"><span class="heart" aria-hidden="true">♡</span></label>
+          </div>
+        </article>
+
+        <!-- Card 4 -->
+        <article class="pz-card" data-age="6-24" data-gender="girl">
+          <div class="pz-media" role="img" aria-label="Clothes bundle"></div>
+          <h3 class="pz-title">Clothes Bundle (6–12m)</h3>
+          <p class="pz-desc">Assorted sleepers and onesies, gently used.</p>
+          <div class="pz-actions">
+            <button class="pz-btn" type="button">Request info</button>
+            <label class="pz-save"><input type="checkbox" name="save-4" aria-label="Save listing"><span class="heart" aria-hidden="true">♡</span></label>
+          </div>
+        </article>
+
+        <!-- Card 5 -->
+        <article class="pz-card" data-age="2-5" data-gender="">
+          <div class="pz-media" role="img" aria-label="Board books"></div>
+          <h3 class="pz-title">Board Books (20)</h3>
+          <p class="pz-desc">Collection of toddlers' board books, great condition.</p>
+          <div class="pz-actions">
+            <button class="pz-btn" type="button">Request info</button>
+            <label class="pz-save"><input type="checkbox" name="save-5" aria-label="Save listing"><span class="heart" aria-hidden="true">♡</span></label>
+          </div>
+        </article>
+
+        <!-- Card 6 -->
+        <article class="pz-card" data-age="6-24" data-gender="boy">
+          <div class="pz-media" role="img" aria-label="Toy car"></div>
+          <h3 class="pz-title">Ride-on Toy Car</h3>
+          <p class="pz-desc">Battery-powered ride-on car, works well.</p>
+          <div class="pz-actions">
+            <button class="pz-btn" type="button">Request info</button>
+            <label class="pz-save"><input type="checkbox" name="save-6" aria-label="Save listing"><span class="heart" aria-hidden="true">♡</span></label>
+          </div>
+        </article>
+      </div>
+    </main>
+  </div>
+</section>
         </div>
 
     </main>

@@ -24,6 +24,7 @@ body {
   background: var(--bg);
   color: var(--text);
   line-height: 1.4;
+
 }
 
 /*########################### Header ###########################*/
@@ -308,6 +309,9 @@ body {
 .dot.active {
   background: var(--accent);
 }
+
+/*########################## Parents Zone #####################*/
+
 
 /*########################## Media Queries #####################*/
 @media (min-width:520px) {
