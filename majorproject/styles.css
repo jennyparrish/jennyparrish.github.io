@@ -266,13 +266,13 @@ body {
 
 .controls {
   position: absolute;
-  top: 50%;
+  top: 40%;
   left: 0;
   right: 0;
   transform: translateY(-50%);
   display: flex;
   justify-content: space-between;
-  padding: 0 6px;
+  padding: 0 2px;
   pointer-events: none;
 }
 
