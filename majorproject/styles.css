@@ -314,6 +314,11 @@ body {
 }
 
 /*########################## Privacy Policy #####################*/
+
+#policy-main {
+  max-width: 700px;
+}
+
 .container {
   width: 100%;
   max-width: var(--max-width);
@@ -578,78 +583,6 @@ body {
   min-height: 170px;
 }
 
-/*
-.pz-media {
-  background: #f1f5f9;
-  height: 110px;
-  border-radius: 6px;
-}
-
-.pz-title {
-  margin: 0;
-  font-size: 1rem;
-}
-
-.pz-desc {
-  margin: 0;
-  color: #425066;
-  font-size: 0.92rem;
-}
-
-.pz-actions {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin-top: auto;
-  gap: .5rem;
-}
-
-.pz-btn {
-  background: var(--accent, #0b79f7);
-  color: #fff;
-  border: 0;
-  padding: .5rem .6rem;
-  border-radius: 6px;
-  cursor: pointer;
-  font-weight: 600;
-}
-
-.pz-save {
-  display: inline-flex;
-  align-items: center;
-  gap: .4rem;
-  cursor: pointer;
-}
-
-.pz-save input {
-  display: none;
-}
-
-.pz-save .heart {
-  font-size: 1.1rem;
-  color: #9ca3af;
-  user-select: none;
-}
-
-.pz-save input:checked+.heart {
-  color: #ef4444;
-}
-
-.pz-save input:checked+.heart::before {
-  content: "♥";
-}
-
-.pz-save input:not(:checked)+.heart::before {
-  content: "♡";
-  color: #9ca3af;
-}
-
-.pz-tip {
-  margin-top: .75rem;
-  font-size: 0.9rem;
-  color: #425066;
-}
-*/
 /*########################## Message Center #####################*/
 .signup-wrap {
   display: flex;
