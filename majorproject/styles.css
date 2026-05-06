@@ -49,7 +49,7 @@ body {
   justify-content: space-between;
 }
 
-/*########################### Nav Toggle ###########################*/
+/* Nav Toggle */
 
 .nav-toggle {
   display: inline-flex;
@@ -100,7 +100,7 @@ body {
 }
 
 
-/*########################### Nav Container #####################*/
+/* Nav Container */
 
 .site-nav {
   max-width: var(--max);
