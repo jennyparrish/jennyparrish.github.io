@@ -542,6 +542,29 @@ body {
   }
 }
 
+@media (min-width:641px) {
+  .pz-layout {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .pz-filters {
+    order: 0;
+    width: 220px;
+  }
+
+  .pz-main {
+    order: 1;
+    flex: 1;
+  }
+
+  .pz-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
+}
+
 @media (min-width:880px) {
   :root {
     --card-w: 30%;
@@ -600,5 +623,11 @@ body {
   .site-main {
     padding-top: 1.5rem;
   }
+}
 
+@media (min-width:1001px) {
+  .pz-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
 }
