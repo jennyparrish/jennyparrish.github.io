@@ -40,20 +40,57 @@
             </ul>
         </nav>
     </header>
+    <div class="signup-wrap">
+        <section class="signup-card card" aria-labelledby="signup-title">
+            <h1 id="signup-title">Join a Message Thread</h1>
+            <p class="muted">Prototype — static, non-functional signup form.</p>
 
-    <main class="site-main">
-        <div class="page">
+            <form onsubmit="return false;" aria-hidden="false">
+                <div class="form-row">
+                    <div class="form-half">
+                        <label for="first">First name</label>
+                        <input id="first" name="first" placeholder="First name" />
+                    </div>
+                    <div class="form-half">
+                        <label for="last">Last name</label>
+                        <input id="last" name="last" placeholder="Last name" />
+                    </div>
+                </div>
 
-            <h2>News and Resources</h2>
-            <p>Coming Soon!</p>
+                <label for="display">Display name</label>
+                <input id="display" name="display" placeholder="How others will see you" />
 
+                <label for="email">Email</label>
+                <input id="email" name="email" type="email" placeholder="you@example.com" />
 
-        <!-- page content -->
+                <div class="form-row">
+                    <div class="form-half">
+                        <label for="password">Password</label>
+                        <input id="password" name="password" type="password" placeholder="••••••••" />
+                    </div>
+                    <div class="form-half">
+                        <label for="confirm">Confirm</label>
+                        <input id="confirm" name="confirm" type="password" placeholder="••••••••" />
+                    </div>
+                </div>
 
-        </div>
+                <label for="thread">Choose thread</label>
+                <select id="thread" name="thread">
+                    <option value="">— Select a thread —</option>
+                    <option>General</option>
+                    <option>Announcements</option>
+                    <option>Support</option>
+                    <option>Random</option>
+                </select>
 
-    </main>
+                <label class="checkbox-label"><input type="checkbox" disabled /> I agree to the terms</label>
 
+                <button class="cta" type="button" aria-disabled="true">Join thread (prototype)</button>
+                <small class="muted" style="display:block;margin-top:10px">This is a static prototype. Replace with
+                    functional code to enable signup.</small>
+            </form>
+        </section>
+    </div>
     <footer class="site-footer">
         <div class="footer-blurb">
             <h2>Kindness is contagious — please, be a superspreader!</h2>
