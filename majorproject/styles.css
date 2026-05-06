@@ -515,6 +515,140 @@ body {
   color: #425066;
 }
 
+/*######################### Furniture Zone ############################*/
+.furniture-zone {
+  padding: 0;
+}
+
+.fz-header h2 {
+  margin: .25rem 0 0;
+  font-size: 1.125rem;
+}
+
+.fz-greeting {
+  margin: .5rem 0 1rem;
+  color: #425066;
+  font-size: 0.95rem;
+}
+
+.fz-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.fz-filters {
+  order: 2;
+  width: 100%;
+  background: #fff;
+  border: 1px solid #e6e8eb;
+  padding: .75rem;
+  border-radius: 8px;
+}
+
+.fz-filter-form fieldset {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+
+.fz-filter-form legend {
+  font-weight: 600;
+  margin-bottom: .4rem;
+}
+
+.fz-main {
+  order: 1;
+}
+
+.fz-grid {
+  display: grid;
+  gap: 0.75rem;
+  grid-template-columns: 1fr;
+}
+
+.fz-card {
+  background: #fff;
+  border: 1px solid #e6e8eb;
+  border-radius: 8px;
+  padding: .75rem;
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+  min-height: 170px;
+}
+/*
+.pz-media {
+  background: #f1f5f9;
+  height: 110px;
+  border-radius: 6px;
+}
+
+.pz-title {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.pz-desc {
+  margin: 0;
+  color: #425066;
+  font-size: 0.92rem;
+}
+
+.pz-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+  gap: .5rem;
+}
+
+.pz-btn {
+  background: var(--accent, #0b79f7);
+  color: #fff;
+  border: 0;
+  padding: .5rem .6rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.pz-save {
+  display: inline-flex;
+  align-items: center;
+  gap: .4rem;
+  cursor: pointer;
+}
+
+.pz-save input {
+  display: none;
+}
+
+.pz-save .heart {
+  font-size: 1.1rem;
+  color: #9ca3af;
+  user-select: none;
+}
+
+.pz-save input:checked+.heart {
+  color: #ef4444;
+}
+
+.pz-save input:checked+.heart::before {
+  content: "♥";
+}
+
+.pz-save input:not(:checked)+.heart::before {
+  content: "♡";
+  color: #9ca3af;
+}
+
+.pz-tip {
+  margin-top: .75rem;
+  font-size: 0.9rem;
+  color: #425066;
+}
+*/
 /*########################## Message Center #####################*/
 .signup-wrap {
   display: flex;
@@ -616,7 +750,11 @@ button {
 
 /*###################### Thank you ######################*/
 
+/*###################### Contact us  ######################*/
 
+#site-contactus {
+  max-width: 1000px;
+}
 
 /*########################## Media Queries #####################*/
 @media (min-width:520px) {
