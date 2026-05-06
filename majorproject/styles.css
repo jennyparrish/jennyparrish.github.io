@@ -278,6 +278,7 @@ body {
 }
 
 .hm-btn {
+  max-width: 30px;
   pointer-events: auto;
   background: rgba(139, 137, 137, 0.526);
   border: none;
