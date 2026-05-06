@@ -577,6 +577,7 @@ body {
   gap: .5rem;
   min-height: 170px;
 }
+
 /*
 .pz-media {
   background: #f1f5f9;
@@ -784,6 +785,27 @@ button {
     grid-template-columns: repeat(2, 1fr);
     gap: 1rem;
   }
+
+  .fz-layout {
+    flex-direction: row;
+    align-items: flex-start;
+    gap: 1rem;
+  }
+
+  .fz-filters {
+    order: 0;
+    width: 220px;
+  }
+
+  .fz-main {
+    order: 1;
+    flex: 1;
+  }
+
+  .fz-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 1rem;
+  }
 }
 
 @media (min-width:880px) {
@@ -848,6 +870,11 @@ button {
 
 @media (min-width:1001px) {
   .pz-grid {
+    grid-template-columns: repeat(3, 1fr);
+    gap: 1rem;
+  }
+
+  .fz-grid {
     grid-template-columns: repeat(3, 1fr);
     gap: 1rem;
   }
