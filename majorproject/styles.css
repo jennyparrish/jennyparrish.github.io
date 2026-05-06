@@ -320,35 +320,39 @@ body {
   text-align: left;
   margin-bottom: var(--gap);
 }
+
 .site-header h2 {
   margin: 0 0 6px 0;
   font-size: 1.5rem;
   line-height: 1.15;
 }
 
-.site-header .brand { 
-  color:var(--accent);
+.site-header .brand {
+  color: var(--accent);
 }
 
-.effective {margin: 0;
+.effective {
+  margin: 0;
   color: var(--muted);
   font-size: 0.95rem;
 }
 
 .pp-card {
-  background:var(--card);
-  border-radius:var(--radius);
-  padding:18px;
-  margin-bottom:12px;
-  box-shadow:0 6px 18px rgba(15,23,42,0.06);
-  border:1px solid rgba(15,23,42,0.04);
+  background: var(--card);
+  border-radius: var(--radius);
+  padding: 18px;
+  margin-bottom: 12px;
+  box-shadow: 0 6px 18px rgba(15, 23, 42, 0.06);
+  border: 1px solid rgba(15, 23, 42, 0.04);
 }
 
-.pp-card h2{
-  margin:0 0 10px 0;
-  font-size:1.05rem;
+.pp-card h2 {
+  margin: 0 0 10px 0;
+  font-size: 1.05rem;
 }
-.pp-card p, .pp-card ul {
+
+.pp-card p,
+.pp-card ul {
   margin: 0 0 0.6rem 0;
   color: var(--muted);
   line-height: 1.45;
@@ -360,8 +364,8 @@ body {
 }
 
 .pp-card ul li {
-  margin-bottom:8px;
-  color:#333;
+  margin-bottom: 8px;
+  color: #333;
 }
 
 .contact a {
@@ -375,48 +379,141 @@ body {
 
 
 /*########################## Parents Zone #####################*/
-  .parents-zone { 
-    padding:0; 
-  }
+.parents-zone {
+  padding: 0;
+}
 
-  .pz-header h2 { 
-    margin:.25rem 0 0; 
-    font-size:1.125rem; 
-  }
+.pz-header h2 {
+  margin: .25rem 0 0;
+  font-size: 1.125rem;
+}
 
-  .pz-greeting { 
-    margin: .5rem 0 1rem; 
-    color: #425066; 
-    font-size: 0.95rem; 
-  }
+.pz-greeting {
+  margin: .5rem 0 1rem;
+  color: #425066;
+  font-size: 0.95rem;
+}
 
-  .pz-layout { 
-    display: flex; 
-    flex-direction: column; 
-    gap:0.75rem; 
-  }
+.pz-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
 
-  .pz-filters { 
-    order: 2; 
-    width: 100%; 
-    background: #fff; 
-    border: 1px solid #e6e8eb; 
-    padding: .75rem; 
-    border-radius: 8px; 
-  }
-  
-  .pz-filter-form fieldset { 
-    border: 0; 
-    padding: 0; 
-    margin: 0; 
-  }
+.pz-filters {
+  order: 2;
+  width: 100%;
+  background: #fff;
+  border: 1px solid #e6e8eb;
+  padding: .75rem;
+  border-radius: 8px;
+}
 
-  .pz-filter-form legend { 
-    font-weight: 600; 
-    margin-bottom: .4rem; 
-  }
+.pz-filter-form fieldset {
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
 
-  
+.pz-filter-form legend {
+  font-weight: 600;
+  margin-bottom: .4rem;
+}
+
+.pz-main {
+  order: 1;
+}
+
+.pz-grid {
+  display: grid;
+  gap: 0.75rem;
+  grid-template-columns: 1fr;
+}
+
+.pz-card {
+  background: #fff;
+  border: 1px solid #e6e8eb;
+  border-radius: 8px;
+  padding: .75rem;
+  display: flex;
+  flex-direction: column;
+  gap: .5rem;
+  min-height: 170px;
+}
+
+.pz-media {
+  background: #f1f5f9;
+  height: 110px;
+  border-radius: 6px;
+}
+
+.pz-title {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.pz-desc {
+  margin: 0;
+  color: #425066;
+  font-size: 0.92rem;
+}
+
+.pz-actions {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: auto;
+  gap: .5rem;
+}
+
+.pz-btn {
+  background: var(--accent, #0b79f7);
+  color: #fff;
+  border: 0;
+  padding: .5rem .6rem;
+  border-radius: 6px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.pz-save {
+  display: inline-flex;
+  align-items: center;
+  gap: .4rem;
+  cursor: pointer;
+}
+
+.pz-save input {
+  display: none;
+}
+
+.pz-save .heart {
+  font-size: 1.1rem;
+  color: #9ca3af;
+  user-select: none;
+}
+
+.pz-save input:checked+.heart {
+  color: #ef4444;
+}
+
+.pz-save input:checked+.heart::before {
+  content: "♥";
+}
+
+.pz-save input:not(:checked)+.heart::before {
+  content: "♡";
+  color: #9ca3af;
+}
+
+.pz-tip {
+  margin-top: .75rem;
+  font-size: 0.9rem;
+  color: #425066;
+}
+
+
+
 /*########################## Help Page #####################*/
 .btn {
   display: inline-block;
@@ -428,8 +525,9 @@ body {
   border: 1px solid #005bb5;
   font-weight: 600;
 }
+
 .btn:focus {
-  outline: 3px solid #b3d4ff; 
+  outline: 3px solid #b3d4ff;
   outline-offset: 2px;
 }
 
