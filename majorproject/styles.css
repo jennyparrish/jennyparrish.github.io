@@ -175,7 +175,7 @@ body {
 }
 
 
-/*##############################Footer###################### */
+/*############################## Footer###################### */
 
 .site-footer {
   margin-top: 2rem;
@@ -309,6 +309,24 @@ body {
 .dot.active {
   background: var(--accent);
 }
+
+/*########################## Privacy Policy #####################*/
+.container {
+  width: 100%;
+  max-width: var(--max-width);
+}
+
+.site-header {
+  text-align: left;
+  margin-bottom: var(--gap);
+}
+.site-header h2 {
+  margin: 0 0 6px 0;
+  font-size: 1.5rem;
+  line-height: 1.15;
+}
+
+
 
 /*########################## Parents Zone #####################*/
 
