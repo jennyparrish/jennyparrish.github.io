@@ -2,156 +2,162 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>NHN Parents Zone</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>NHN Parents Zone</title>
 
-    <link rel="stylesheet" href="styles.css">
-    <script src="scripts.js" defer></script>
+  <link rel="stylesheet" href="styles.css">
+  <script src="scripts.js" defer></script>
 </head>
 
 <body>
 
-    <header class="site-header">
-        <div class="header-row">
-            <button class="nav-toggle" aria-controls="site-nav-list" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="nav-icon" aria-hidden="true"></span>
-                <span class="nav-label">Menu</span>
-            </button>
+  <header class="site-header">
+    <div class="header-row">
+      <button class="nav-toggle" aria-controls="site-nav-list" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="nav-icon" aria-hidden="true"></span>
+        <span class="nav-label">Menu</span>
+      </button>
 
-            <div class="brand">
-                <h1 class="site-title">Neighbors Helping Neighbors</h1>
-                <p class="site-subtitle">A Community Resource</p>
-            </div>
-        </div>
-
-        <nav class="site-nav" aria-label="Primary navigation">
-            <ul id="site-nav-list" class="site-nav-list">
-                <li><a href="/majorproject/index.html">Home</a></li>
-                <li><a href="/majorproject/guidelines.html">Guidelines</a></li>
-                <li><a href="/majorproject/policies.html">Important Policies</a></li>
-                <li><a href="/majorproject/forparents.html" aria-current="page">Parents Zone</a></li>
-                <li><a href="/majorproject/furniture.html">Furniture Zone</a></li>
-                <li><a href="/majorproject/messagecenter.html">Message Center</a></li>
-                <li><a href="/majorproject/help.html">Help &amp; F.A.Q.s</a></li>
-                <li><a href="/majorproject/thankyou.html">Thank you</a></li>
-                <li><a href="/majorproject/contactus.html">Contact Us</a></li>
-            </ul>
-        </nav>
-    </header>
-
-    <main class="site-main">
-        <div class="page">
-<section class="parents-zone">
-  <div class="pz-header">
-    <h2>Parents Zone</h2>
-    <p class="pz-greeting">Find or offer items to nearby parents — swap, lend, or give away. Use the filters to narrow results.</p>
-  </div>
-
-  <div class="pz-layout">
-    <aside class="pz-filters" aria-label="Filters">
-      <form method="get" action="#" class="pz-filter-form">
-        <fieldset>
-          <legend>Age</legend>
-          <label><input type="radio" name="age" value="" checked> Any</label><br>
-          <label><input type="radio" name="age" value="0-6"> 0–6 months</label><br>
-          <label><input type="radio" name="age" value="6-24"> 6–24 months</label><br>
-          <label><input type="radio" name="age" value="2-5"> 2–5 years</label>
-        </fieldset>
-
-        <fieldset style="margin-top:1rem">
-          <legend>Gender</legend>
-          <label><input type="checkbox" name="boy" value="1"> Boy</label><br>
-          <label><input type="checkbox" name="girl" value="1"> Girl</label>
-        </fieldset>
-
-        <p style="margin-top:1rem;font-size:0.95rem;color:#425066">Filter listings.</p>
-      </form>
-    </aside>
-
-    <main class="pz-main" aria-live="polite">
-      <div class="pz-grid">
-        <!-- Card 1 -->
-        <article class="pz-card" data-age="6-24" data-gender="boy">
-          <div class="pz-media" role="img" aria-label="Blue stroller"></div>
-          <h3 class="pz-title">Lightweight Stroller</h3>
-          <p class="pz-desc">Compact stroller, great for travel. Minor scuffs.</p>
-          <div class="pz-actions">
-            <button class="pz-btn" type="button">Request info</button>
-            <label class="pz-save"><input type="checkbox" name="save-1" aria-label="Save listing"><span class="heart" aria-hidden="true">♡</span></label>
-          </div>
-        </article>
-
-        <!-- Card 2 -->
-        <article class="pz-card" data-age="2-5" data-gender="girl">
-          <div class="pz-media" role="img" aria-label="Doll set"></div>
-          <h3 class="pz-title">Doll & Accessories</h3>
-          <p class="pz-desc">Set of dolls with clothing and stroller.</p>
-          <div class="pz-actions">
-            <button class="pz-btn" type="button">Request info</button>
-            <label class="pz-save"><input type="checkbox" name="save-2" aria-label="Save listing"><span class="heart" aria-hidden="true">♡</span></label>
-          </div>
-        </article>
-
-        <!-- Card 3 -->
-        <article class="pz-card" data-age="0-6" data-gender="">
-          <div class="pz-media" role="img" aria-label="Baby swing"></div>
-          <h3 class="pz-title">Baby Swing</h3>
-          <p class="pz-desc">Electric swing with multiple speeds. Clean and functional.</p>
-          <div class="pz-actions">
-            <button class="pz-btn" type="button">Request info</button>
-            <label class="pz-save"><input type="checkbox" name="save-3" aria-label="Save listing"><span class="heart" aria-hidden="true">♡</span></label>
-          </div>
-        </article>
-
-        <!-- Card 4 -->
-        <article class="pz-card" data-age="6-24" data-gender="girl">
-          <div class="pz-media" role="img" aria-label="Clothes bundle"></div>
-          <h3 class="pz-title">Clothes Bundle (6–12m)</h3>
-          <p class="pz-desc">Assorted sleepers and onesies, gently used.</p>
-          <div class="pz-actions">
-            <button class="pz-btn" type="button">Request info</button>
-            <label class="pz-save"><input type="checkbox" name="save-4" aria-label="Save listing"><span class="heart" aria-hidden="true">♡</span></label>
-          </div>
-        </article>
-
-        <!-- Card 5 -->
-        <article class="pz-card" data-age="2-5" data-gender="">
-          <div class="pz-media" role="img" aria-label="Board books"></div>
-          <h3 class="pz-title">Board Books (20)</h3>
-          <p class="pz-desc">Collection of toddlers' board books, great condition.</p>
-          <div class="pz-actions">
-            <button class="pz-btn" type="button">Request info</button>
-            <label class="pz-save"><input type="checkbox" name="save-5" aria-label="Save listing"><span class="heart" aria-hidden="true">♡</span></label>
-          </div>
-        </article>
-
-        <!-- Card 6 -->
-        <article class="pz-card" data-age="6-24" data-gender="boy">
-          <div class="pz-media" role="img" aria-label="Toy car"></div>
-          <h3 class="pz-title">Ride-on Toy Car</h3>
-          <p class="pz-desc">Battery-powered ride-on car, works well.</p>
-          <div class="pz-actions">
-            <button class="pz-btn" type="button">Request info</button>
-            <label class="pz-save"><input type="checkbox" name="save-6" aria-label="Save listing"><span class="heart" aria-hidden="true">♡</span></label>
-          </div>
-        </article>
+      <div class="brand">
+        <h1 class="site-title">Neighbors Helping Neighbors</h1>
+        <p class="site-subtitle">A Community Resource</p>
       </div>
-    </main>
-  </div>
-</section>
+    </div>
+
+    <nav class="site-nav" aria-label="Primary navigation">
+      <ul id="site-nav-list" class="site-nav-list">
+        <li><a href="/majorproject/index.html">Home</a></li>
+        <li><a href="/majorproject/guidelines.html">Guidelines</a></li>
+        <li><a href="/majorproject/policies.html">Important Policies</a></li>
+        <li><a href="/majorproject/forparents.html" aria-current="page">Parents Zone</a></li>
+        <li><a href="/majorproject/furniture.html">Furniture Zone</a></li>
+        <li><a href="/majorproject/messagecenter.html">Message Center</a></li>
+        <li><a href="/majorproject/help.html">Help &amp; F.A.Q.s</a></li>
+        <li><a href="/majorproject/thankyou.html">Thank you</a></li>
+        <li><a href="/majorproject/contactus.html">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="site-main">
+    <div class="page">
+      <section class="parents-zone">
+        <div class="pz-header">
+          <h2>Parents Zone</h2>
+          <p class="pz-greeting">Find or offer items to nearby parents — swap, lend, or give away. Use the filters to
+            narrow results.</p>
         </div>
 
-    </main>
+        <div class="pz-layout">
+          <aside class="pz-filters" aria-label="Filters">
+            <form method="get" action="#" class="pz-filter-form">
+              <fieldset>
+                <legend>Age</legend>
+                <label><input type="radio" name="age" value="" checked> Any</label><br>
+                <label><input type="radio" name="age" value="0-6"> 0–6 months</label><br>
+                <label><input type="radio" name="age" value="6-24"> 6–24 months</label><br>
+                <label><input type="radio" name="age" value="2-5"> 2–5 years</label>
+              </fieldset>
 
-    <footer class="site-footer">
-        <div class="footer-blurb">
-            <h2>Kindness is contagious — please, be a superspreader!</h2>
-            <p>We have one Earth — Together we can keep useful treasures out of landfills.</p>
+              <fieldset style="margin-top:1rem">
+                <legend>Gender</legend>
+                <label><input type="checkbox" name="boy" value="1"> Boy</label><br>
+                <label><input type="checkbox" name="girl" value="1"> Girl</label>
+              </fieldset>
+
+              <p style="margin-top:1rem;font-size:0.95rem;color:#425066">Filter listings.</p>
+            </form>
+          </aside>
+
+          <main class="pz-main" aria-live="polite">
+            <div class="pz-grid">
+              <!-- Card 1 -->
+              <article class="pz-card" data-age="6-24" data-gender="boy">
+                <div class="pz-media" role="img" aria-label="Blue stroller"></div>
+                <h3 class="pz-title">Lightweight Stroller</h3>
+                <p class="pz-desc">Compact stroller, great for travel. Minor scuffs.</p>
+                <div class="pz-actions">
+                  <button class="pz-btn" type="button">Request info</button>
+                  <label class="pz-save"><input type="checkbox" name="save-1" aria-label="Save listing"><span
+                      class="heart" aria-hidden="true">♡</span></label>
+                </div>
+              </article>
+
+              <!-- Card 2 -->
+              <article class="pz-card" data-age="2-5" data-gender="girl">
+                <div class="pz-media" role="img" aria-label="Doll set"></div>
+                <h3 class="pz-title">Doll & Accessories</h3>
+                <p class="pz-desc">Set of dolls with clothing and stroller.</p>
+                <div class="pz-actions">
+                  <button class="pz-btn" type="button">Request info</button>
+                  <label class="pz-save"><input type="checkbox" name="save-2" aria-label="Save listing"><span
+                      class="heart" aria-hidden="true">♡</span></label>
+                </div>
+              </article>
+
+              <!-- Card 3 -->
+              <article class="pz-card" data-age="0-6" data-gender="">
+                <div class="pz-media" role="img" aria-label="Baby swing"></div>
+                <h3 class="pz-title">Baby Swing</h3>
+                <p class="pz-desc">Electric swing with multiple speeds. Clean and functional.</p>
+                <div class="pz-actions">
+                  <button class="pz-btn" type="button">Request info</button>
+                  <label class="pz-save"><input type="checkbox" name="save-3" aria-label="Save listing"><span
+                      class="heart" aria-hidden="true">♡</span></label>
+                </div>
+              </article>
+
+              <!-- Card 4 -->
+              <article class="pz-card" data-age="6-24" data-gender="girl">
+                <div class="pz-media" role="img" aria-label="Clothes bundle"></div>
+                <h3 class="pz-title">Clothes Bundle (6–12m)</h3>
+                <p class="pz-desc">Assorted sleepers and onesies, gently used.</p>
+                <div class="pz-actions">
+                  <button class="pz-btn" type="button">Request info</button>
+                  <label class="pz-save"><input type="checkbox" name="save-4" aria-label="Save listing"><span
+                      class="heart" aria-hidden="true">♡</span></label>
+                </div>
+              </article>
+
+              <!-- Card 5 -->
+              <article class="pz-card" data-age="2-5" data-gender="">
+                <div class="pz-media" role="img" aria-label="Board books"></div>
+                <h3 class="pz-title">Board Books (20)</h3>
+                <p class="pz-desc">Collection of toddlers' board books, great condition.</p>
+                <div class="pz-actions">
+                  <button class="pz-btn" type="button">Request info</button>
+                  <label class="pz-save"><input type="checkbox" name="save-5" aria-label="Save listing"><span
+                      class="heart" aria-hidden="true">♡</span></label>
+                </div>
+              </article>
+
+              <!-- Card 6 -->
+              <article class="pz-card" data-age="6-24" data-gender="boy">
+                <div class="pz-media" role="img" aria-label="Toy car"></div>
+                <h3 class="pz-title">Ride-on Toy Car</h3>
+                <p class="pz-desc">Battery-powered ride-on car, works well.</p>
+                <div class="pz-actions">
+                  <button class="pz-btn" type="button">Request info</button>
+                  <label class="pz-save"><input type="checkbox" name="save-6" aria-label="Save listing"><span
+                      class="heart" aria-hidden="true">♡</span></label>
+                </div>
+              </article>
+            </div>
+          </main>
         </div>
-        <p>&copy; 2026 Neighbors Helping Neighbors. All rights reserved.</p>
-    </footer>
+      </section>
+    </div>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-blurb">
+      <h2>Kindness is contagious — please, be a superspreader!</h2>
+      <p>We have one Earth — Together we can keep useful treasures out of landfills.</p>
+    </div>
+    <p>&copy; 2026 Neighbors Helping Neighbors. All rights reserved.</p>
+  </footer>
 
 </body>
 

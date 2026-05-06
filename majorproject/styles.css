@@ -30,9 +30,11 @@ body {
 /*########################### Header ###########################*/
 
 .site-header {
-  position: static;         /* will be positioned with normal document flow */
-  top: 0;           
-  inset-inline: 0;          /* sets both the inline-start and inline-end offsets of a positioned element to 0 */
+  position: static;
+  /* will be positioned with normal document flow */
+  top: 0;
+  inset-inline: 0;
+  /* sets both the inline-start and inline-end offsets of a positioned element to 0 */
   z-index: 120;
   border-bottom: 1px solid #e6e8eb;
   background: linear-gradient(180deg, #fff, #fbfdff);
@@ -611,6 +613,10 @@ button {
 .hp-btn:hover {
   background: #005bb5;
 }
+
+/*###################### Thank you ######################*/
+
+
 
 /*########################## Media Queries #####################*/
 @media (min-width:520px) {
