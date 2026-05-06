@@ -313,6 +313,26 @@ body {
 /*########################## Parents Zone #####################*/
 
 
+/*########################## Help Page #####################*/
+.btn {
+  display: inline-block;
+  padding: 10px 16px;
+  background: #0066cc;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 6px;
+  border: 1px solid #005bb5;
+  font-weight: 600;
+}
+.btn:focus {
+  outline: 3px solid #b3d4ff; 
+  outline-offset: 2px;
+}
+
+.btn:hover {
+  background: #005bb5;
+}
+
 /*########################## Media Queries #####################*/
 @media (min-width:520px) {
   :root {
