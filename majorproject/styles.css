@@ -160,9 +160,19 @@ body {
 
 /*########################### Brand #####################*/
 
-.brand {
+/*.brand {
   display: flex;
   flex-direction: column;
+}*/
+.brand {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+  padding: 8px;
+}
+.brand:focus-visible {
+  outline: 3px solid #2563eb;
+  outline-offset: 3px;
 }
 
 .site-title {
