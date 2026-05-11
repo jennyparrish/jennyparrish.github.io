@@ -750,6 +750,9 @@ button {
   cursor: pointer;
   font-weight: 700;
 }
+ .site-contactus {
+  max-width: 800px;
+ }
 
 /*########################## Media Queries #####################*/
 @media (min-width:520px) {
