@@ -704,8 +704,50 @@ button {
 
 /*###################### Contact us  ######################*/
 
-#site-contactus {
-  max-width: 1000px;
+.site-contactus {
+  max-width: var(--max);
+  margin: 1rem auto;
+  padding: .9rem;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(16,24,40,.06);
+}
+
+/* Form */
+.contact-form { 
+  display: grid; 
+  gap: .6rem; 
+}
+
+.contact-form label { 
+  font-weight: 600; 
+  font-size: .95rem; 
+}
+
+.contact-form input[type="text"],
+.contact-form input[type="email"],
+.contact-form textarea {
+  width: 100%;
+  padding: .6rem .75rem;
+  border: 1px solid #e6e8eb;
+  border-radius: 10px;
+  background: #fff;
+}
+
+.contact-form input:focus,
+.contact-form textarea:focus { 
+  outline: 3px solid rgba(11,120,247,.12); 
+  border-color: rgba(11,120,247,.2); 
+}
+
+.contact-form button[type="submit"]{
+  background: var(--accent);
+  color: #fff;
+  border: none;
+  padding: .6rem .9rem;
+  border-radius: 10px;
+  cursor: pointer;
+  font-weight: 700;
 }
 
 /*########################## Media Queries #####################*/
