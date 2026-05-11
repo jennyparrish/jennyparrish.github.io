@@ -170,6 +170,7 @@ body {
   color: inherit;
   padding: 8px;
 }
+
 .brand:focus-visible {
   outline: 3px solid #2563eb;
   outline-offset: 3px;
@@ -710,18 +711,18 @@ button {
   padding: .9rem;
   background: #fff;
   border-radius: 12px;
-  box-shadow: 0 8px 24px rgba(16,24,40,.06);
+  box-shadow: 0 8px 24px rgba(16, 24, 40, .06);
 }
 
 /* Form */
-.contact-form { 
-  display: grid; 
-  gap: .6rem; 
+.contact-form {
+  display: grid;
+  gap: .6rem;
 }
 
-.contact-form label { 
-  font-weight: 600; 
-  font-size: .95rem; 
+.contact-form label {
+  font-weight: 600;
+  font-size: .95rem;
 }
 
 .contact-form input[type="text"],
@@ -735,12 +736,12 @@ button {
 }
 
 .contact-form input:focus,
-.contact-form textarea:focus { 
-  outline: 3px solid rgba(11,120,247,.12); 
-  border-color: rgba(11,120,247,.2); 
+.contact-form textarea:focus {
+  outline: 3px solid rgba(11, 120, 247, .12);
+  border-color: rgba(11, 120, 247, .2);
 }
 
-.contact-form button[type="submit"]{
+.contact-form button[type="submit"] {
   background: var(--accent);
   color: #fff;
   border: none;
@@ -803,7 +804,7 @@ button {
 
 @media (min-width:880px) {
   :root {
-    --card-w: 30%;
+    --card-w: 720px;
   }
 
   .header-row {
@@ -858,6 +859,43 @@ button {
 
   .site-main {
     padding-top: 1.5rem;
+  }
+
+  /*########### Contact Us ###########*/
+  .site-contactus {
+    max-width: var(--card-w);
+    margin: 1.5rem auto;
+    padding: 1.25rem;
+  }
+
+  .contact-form {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: .75rem;
+    align-items: start;
+  }
+
+  /* make labels span both columns and inputs flow nicely */
+  .contact-form label {
+    grid-column: 1 / -1;
+  }
+
+  .contact-form textarea {
+    grid-column: 1 / -1;
+  }
+
+  .contact-form input[type="text"],
+  .contact-form input[type="email"],
+  .contact-form textarea {
+    padding: .75rem .9rem;
+    border-radius: 12px;
+  }
+
+  .contact-form button[type="submit"] {
+    grid-column: 1 / -1;
+    justify-self: start;
+    padding: .7rem 1rem;
+    border-radius: 12px;
   }
 }
 
