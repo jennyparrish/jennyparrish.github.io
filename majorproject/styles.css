@@ -807,7 +807,7 @@ button {
 
 @media (min-width:880px) {
   :root {
-    --card-w: 30%;
+    --card-w: 35%;
   }
 
   .header-row {
